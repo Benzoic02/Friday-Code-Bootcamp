@@ -3,16 +3,16 @@
 
   const lessons = [
     { id: "introduction", number: "00", label: "Introduction", file: "Introduction.md" },
-    { id: "module-01", number: "01", label: "Setup & first product", file: "Module 01 - Setup and Your First Shipped Product.md" },
-    { id: "module-02", number: "02", label: "Full-stack web MVPs", file: "Module 02 - Building Real Full-Stack Web MVPs.md" },
-    { id: "module-03", number: "03", label: "iOS & Android apps", file: "Module 03 - Building iOS and Android Apps.md" },
-    { id: "module-04", number: "04", label: "Research & validation", file: "Module 04 - Research, Competitive Intelligence and Idea Validation.md" },
-    { id: "module-05", number: "05", label: "Growth & distribution", file: "Module 05 - Growth Systems, Outreach, Content and Distribution.md" },
-    { id: "module-06", number: "06", label: "Video with Kling & ElevenLabs", file: "Module 06 - Automating Video Production with Kling and ElevenLabs.md" },
-    { id: "module-07", number: "07", label: "Automations & agents", file: "Module 07 - Automations and Always-On Agents.md" },
-    { id: "module-08", number: "08", label: "Multi-agent orchestration", file: "Module 08 - Multi-Agent Orchestration for Complex Products.md" },
-    { id: "module-09", number: "09", label: "Production & monetization", file: "Module 09 - Productionizing and Monetizing What You Build.md" },
-    { id: "module-10", number: "10", label: "Your product system", file: "Module 10 - Capstone, Build Your Own Product System.md" }
+    { id: "module-01", number: "01", label: "Ship your first product", file: "Module 01 - Setup and Your First Shipped Product.md" },
+    { id: "module-02", number: "02", label: "Build a web app", file: "Module 02 - Building Real Full-Stack Web MVPs.md" },
+    { id: "module-03", number: "03", label: "Build a mobile app", file: "Module 03 - Building iOS and Android Apps.md" },
+    { id: "module-04", number: "04", label: "Find a problem", file: "Module 04 - Research, Competitive Intelligence and Idea Validation.md" },
+    { id: "module-05", number: "05", label: "Find your first users", file: "Module 05 - Growth Systems, Outreach, Content and Distribution.md" },
+    { id: "module-06", number: "06", label: "Make a product video", file: "Module 06 - Automating Video Production with Kling and ElevenLabs.md" },
+    { id: "module-07", number: "07", label: "Automate a workflow", file: "Module 07 - Automations and Always-On Agents.md" },
+    { id: "module-08", number: "08", label: "Build an agent", file: "Module 08 - Multi-Agent Orchestration for Complex Products.md" },
+    { id: "module-09", number: "09", label: "Launch and monetize", file: "Module 09 - Productionizing and Monetizing What You Build.md" },
+    { id: "module-10", number: "10", label: "Build your product system", file: "Module 10 - Capstone, Build Your Own Product System.md" }
   ];
 
   const moduleVisuals = {
@@ -52,9 +52,9 @@
       steps: [["01", "Trigger", "Choose a recurring event"], ["02", "Constrain", "Limit access + actions"], ["03", "Run", "Test with safe examples"], ["04", "Monitor", "Review logs + stop rules"]]
     },
     "module-08": {
-      title: "Complex idea to coordinated work",
+      title: "Brief to agent workflow",
       output: "Reviewed work that fits together",
-      steps: [["01", "Break down", "Define independent tasks"], ["02", "Assign", "Match work to agents"], ["03", "Integrate", "Resolve shared decisions"], ["04", "Review", "Test the whole product"]]
+      steps: [["01", "Define", "Set the goal + boundaries"], ["02", "Assign", "Give each role one task"], ["03", "Integrate", "Resolve shared decisions"], ["04", "Review", "Test the whole product"]]
     },
     "module-09": {
       title: "Prototype to dependable product",
@@ -241,6 +241,24 @@
     });
     const temporary = document.createElement("div");
     temporary.innerHTML = safeHtml;
+    temporary.querySelectorAll("p").forEach((marker) => {
+      if (marker.textContent.trim() !== "Copy/paste prompt" || !marker.querySelector("strong")) return;
+      const quote = marker.nextElementSibling;
+      if (!quote || quote.tagName !== "BLOCKQUOTE") return;
+
+      const card = document.createElement("section");
+      card.className = "copy-prompt";
+      const header = document.createElement("div");
+      header.className = "copy-prompt-header";
+      const button = document.createElement("button");
+      button.className = "copy-prompt-button";
+      button.type = "button";
+      button.textContent = "Copy";
+      button.setAttribute("aria-label", "Copy prompt to clipboard");
+      header.append(button);
+      card.append(header, quote);
+      marker.replaceWith(card);
+    });
     const sourceTitle = temporary.querySelector("h1");
     const title = sourceTitle ? sourceTitle.textContent.trim() : lesson.label;
     if (sourceTitle) sourceTitle.remove();
@@ -290,6 +308,32 @@
       ${lesson.id === "introduction" ? '<div class="hero-divider"><span>THE COURSE</span></div>' : ""}
     </header>
     <div class="lesson-body">${temporary.innerHTML}</div>`;
+    content.querySelectorAll(".copy-prompt-button").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const prompt = button.closest(".copy-prompt").querySelector("blockquote").textContent.trim();
+        try {
+          await navigator.clipboard.writeText(prompt);
+        } catch (error) {
+          const field = document.createElement("textarea");
+          field.value = prompt;
+          field.setAttribute("readonly", "");
+          field.style.position = "fixed";
+          field.style.opacity = "0";
+          document.body.appendChild(field);
+          field.select();
+          const copied = document.execCommand("copy");
+          field.remove();
+          if (!copied) {
+            console.warn("Prompt could not be copied to the clipboard.", error);
+            button.textContent = "Copy failed";
+            window.setTimeout(() => { button.textContent = "Copy"; }, 1800);
+            return;
+          }
+        }
+        button.textContent = "Copied!";
+        window.setTimeout(() => { button.textContent = "Copy"; }, 1800);
+      });
+    });
     document.title = `${title} | Friday Code Bootcamp`;
     renderFooter();
     buildNavigation();

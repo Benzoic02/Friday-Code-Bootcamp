@@ -1,4 +1,4 @@
-# Module 10: Capstone, Build Your Own Product System
+# Module 10: Build Your Product System
 
 ## Goal
 
@@ -159,6 +159,10 @@ Be candid. The goal is to show that you can distinguish useful leverage from out
 The capstone is complete when another person can understand the intended user and demonstrate the live product’s main task; at least one automation can be run or observed with a documented trigger and bounded scope; the agent strategy names responsibilities, access, handoffs, and human checkpoints; and the project includes a useful test record, known limitations, and a way to pause or recover. You must also include a measurable product or automation outcome and a short honest reflection on leverage and speed.
 
 As a practical minimum, invite at least three appropriate reviewers or potential users, observe at least one person attempting the central task without coaching, and record the feedback and what you changed or decided not to change. For a self-directed or privacy-sensitive capstone, use a safe demo and explain how you would recruit an appropriate pilot. A small sample is not proof of market demand; it is a way to discover the next question.
+
+**Copy/paste prompt**
+
+> Help me plan my capstone system for [user] and [problem]. My proposed product is [product], and one repeated task I may automate is [task]. First return a step-by-step plan covering the smallest live product, user journey, data and access boundaries, agent roles, automation trigger and limits, test plan, measurable success criteria, known risks, and rollback or pause path. Separate assumptions from facts and point out what needs my decision. Do not edit files, connect accounts, use real customer data, spend money, send or publish anything, or schedule an automation until I approve the plan. After approval, work in small milestones and explain how each milestone will be verified.
 
 ## Carry it forward
 

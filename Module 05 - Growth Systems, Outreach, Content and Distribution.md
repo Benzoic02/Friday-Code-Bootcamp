@@ -1,4 +1,4 @@
-# Module 05: Growth Systems, Outreach, Content and Distribution
+# Module 05: Find Your First Users
 
 ## The goal: find and talk to users
 
@@ -117,6 +117,10 @@ Pick one product idea and one audience you can reach appropriately. Your aim is 
 4. Draft a short message, review each recipient and claim, then send a small batch through an appropriate channel.
 5. Publish one useful piece based on a verified question or product fact, and invite focused feedback.
 6. Record replies, opt-outs, and lessons without unnecessary personal data. After two weeks, state whether evidence supports changing the audience, message, product, or channel.
+
+**Copy/paste prompt**
+
+> Help me prepare a small, respectful user-research outreach test for [product] and [audience]. My goal is [learning goal]. Using only the public professional context and source links I provide, suggest why each person may be relevant, then draft a short message that accurately introduces me, makes one easy-to-decline request, and does not imply a relationship or unverified result. Return drafts for human review only. Do not find or scrape personal contact details, send messages, schedule follow-ups, or contact anyone. Mark uncertain facts and include an opt-out reminder in the workflow.
 
 An exercise is successful even if few people respond, provided you learn why and adjust. A polite “not relevant” can be more informative than a vague signup.
 

@@ -248,6 +248,13 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
 .lesson-content li::marker { color: var(--accent); }
 .lesson-content blockquote { margin: 21px 0 25px; padding: 18px 22px; border-left: 2px solid var(--accent); border-radius: 0 8px 8px 0; background: var(--quote); }
 .lesson-content blockquote p { margin: 0; color: var(--text); }
+.copy-prompt { margin: 21px 0 25px; overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background: var(--quote); }
+.copy-prompt-header { display: flex; min-height: 52px; align-items: center; justify-content: space-between; gap: 16px; padding: 8px 12px 8px 18px; border-bottom: 1px solid var(--line); }
+.copy-prompt-header strong { color: var(--text); font-size: 13px; font-weight: 700; }
+.copy-prompt-button { min-width: 76px; min-height: 34px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 7px; background: var(--panel-raised); color: var(--text); cursor: pointer; font-size: 12px; font-weight: 700; transition: border-color 150ms ease, background-color 150ms ease, color 150ms ease; }
+.copy-prompt-button:hover { border-color: var(--accent); color: var(--accent); }
+.copy-prompt blockquote { margin: 0; padding: 18px; border: 0; border-radius: 0; background: transparent; }
+.copy-prompt blockquote p { color: var(--text); }
 .lesson-content code { padding: .17em .42em; border: 1px solid var(--line); border-radius: 5px; background: var(--code); color: var(--accent-2); font-family: var(--font-mono); font-size: .82em; overflow-wrap: anywhere; }
 .lesson-content pre { margin: 20px 0 25px; padding: 18px 20px; overflow-x: auto; border: 1px solid var(--line); border-radius: 9px; background: var(--code); }
 .lesson-content pre code { padding: 0; border: 0; background: transparent; }

@@ -1,4 +1,4 @@
-# Module 01: Setup and Your First Shipped Product
+# Module 01: Ship Your First Product
 
 ## What you will accomplish
 
@@ -84,6 +84,13 @@ Explain in a short privacy notice what you collect and why, and how people can c
 
 Deployment makes the page public. The outline names Vercel as the destination. Follow current supported steps and confirm which repository and branch will be published.
 
+Here is a walkthrough of Friday Code's one-click deployment flow. Available options may differ in your project, so confirm the target and settings before publishing.
+
+<video controls playsinline preload="metadata" aria-label="One-click deployment in Friday Code">
+  <source src="Videos/Friday%20Code-OneClickDeployment.mp4" type="video/mp4">
+  Your browser does not support embedded video. <a href="Videos/Friday%20Code-OneClickDeployment.mp4">Open the video</a>.
+</video>
+
 Check the build output and resolve errors rather than clicking through warnings blindly. Confirm required environment variables are configured in the deployment environment and are not exposed in public source. Preview the deployed address before sharing it widely. Test the page on desktop and mobile, submit a test signup, and verify the data arrives in the intended place. A successful deployment is not proof that the whole product works.
 
 Use a small launch checklist:
@@ -133,6 +140,10 @@ Choose one real problem you can describe in two sentences. Create a one-page sit
 6. Deploy to Vercel, inspect the live page, and verify the signup reaches the intended private table.
 7. Send the link to at least five relevant people. Ask them to describe the offer in their own words and note objections.
 8. Review results after 48 hours. Write what you learned, what remains uncertain, and the single next experiment.
+
+**Copy/paste prompt**
+
+> Help me plan a small waitlist experiment. My audience is [audience], their problem is [problem], and the idea I want to test is [idea]. First propose the page sections, signup data, privacy/access rules, and a test checklist. Do not edit files or connect services until I approve the plan. Do not invent claims, testimonials, pricing, or integrations. After approval, build one step at a time and tell me what changed and how to verify it.
 
 **Success criteria**
 

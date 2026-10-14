@@ -1,4 +1,4 @@
-# Module 09: Productionizing and Monetizing What You Build
+# Module 09: Launch and Monetize
 
 ## Goal
 
@@ -100,6 +100,10 @@ A hybrid workflow helps with precise debugging or close inspection. Ask Friday t
 Present the core task from a new-user state, complete a payment test including failure or cancellation, show how entitlement is verified, and explain secret protection. Include loading, empty, success, and error states, plus a targeted automated or repeatable manual test. Define two or three analytics events, or explain why you do not collect them, and show they behave as intended.
 
 Also prepare a one-page launch note: intended user, promise, scope, known limitations, support route, privacy and data notes, dependencies, estimated cost per typical user, and the next step if a provider fails. Invite at least three relevant people to try the product or review the offer; record what they did and said without overstating what a small sample proves. A successful project is a verified learning step, not necessarily a profitable launch.
+
+**Copy/paste prompt**
+
+> Help me prepare [product] for a small, controlled pilot. First inspect and report the core user journey, likely failure cases, data permissions, payment flow, analytics, dependencies, and recovery options without editing files. The offer is [offer] and the target user is [user]. Produce a step-by-step test plan covering normal use, invalid input, errors, access boundaries, and payment success/failure/cancellation in test mode only. Do not enable live payments, collect real customer data, expose secrets, or publish a launch claim. Wait for my approval before proposing code changes, and state how I can verify each result.
 
 For the first few days of a pilot, check error reports, provider usage, and support messages on a set schedule. Decide in advance what would make you pause signups, such as a repeated access-control problem or unexpectedly high API charges. Tell testers how to report trouble and what response time to expect. Do not leave a paid or automated workflow unattended simply because its first test succeeded.
 

@@ -1,4 +1,4 @@
-# Module 06: Automating Video Production with Kling and ElevenLabs
+# Module 06: Make a Product Video
 
 ## The goal: make useful video with less manual work
 
@@ -137,6 +137,10 @@ Build one short clip for a product you own or a fictional product. The purpose i
 4. Generate one test scene, then review before producing more. Create voiceover with an authorized voice and check pronunciation.
 5. Assemble scenes, narration, captions, and truthful next step in a confirmed workflow.
 6. Ask an unfamiliar viewer to explain the video. Check budget, rights, privacy, playback, and destination guidance; save prompts and review notes.
+
+**Copy/paste prompt**
+
+> Create a production plan for a short video about [product] for [audience]. Use only these verified product facts: [facts]. The goal is [goal], the destination is [platform], and the desired length is [length]. First draft a 30- to 60-word script and a three- or four-scene plan with a visual approach, narration, captions, and claims to verify. Label mockups clearly and do not invent results, customers, or capabilities. Do not call paid services, generate a voice or likeness, or publish anything until I approve the script, scene prompts, rights, and budget.
 
 For a real launch, begin with a private or limited test and ask for feedback. Do not publish personalized video to a prospect unless they expect it and the underlying data and likeness use are appropriate. An unsolicited “personal” clip can feel invasive even if it was generated accurately.
 

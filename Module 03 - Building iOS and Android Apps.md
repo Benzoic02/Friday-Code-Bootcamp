@@ -1,4 +1,4 @@
-# Module 03: Building iOS and Android Apps
+# Module 03: Build a Mobile App
 
 ## From a web idea to a useful phone app
 
@@ -138,6 +138,10 @@ Convert a web idea into a mobile companion app for a small freelance or sales te
 7. Test loss of connectivity, save a draft, restart the app, reconnect, and confirm the status changes only after a successful sync.
 8. Ask two intended users to complete a task without guidance. Record the time, hesitation, and mistaken taps.
 9. Export or checkpoint the code. Write down what would be needed to continue in Expo or EAS and what store work remains.
+
+**Copy/paste prompt**
+
+> Help me plan a mobile app for [user] who needs to [task] while [context]. The first version needs [screens/actions] and must not include [out-of-scope features]. Before coding, propose the navigation, data flow, authentication and permissions, offline behavior, and device test checklist. Do not use privileged credentials, collect location, or request device permissions unless I approve a clear need. After I approve the plan, build one screen or workflow at a time and tell me how to preview and test it on a real device.
 
 **Success criteria**
 

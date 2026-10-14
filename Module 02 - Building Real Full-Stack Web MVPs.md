@@ -1,4 +1,4 @@
-# Module 02: Building Real Full-Stack Web MVPs
+# Module 02: Build a Web App
 
 ## What changes when a site becomes a product
 
@@ -43,6 +43,13 @@ Build in milestones: browsing, submission, moderation, then visual refinement. A
 The frontend is what a person uses: pages, forms, lists, and navigation. The backend holds persistent records and trusted operations. TypeScript can catch some mistakes during development; Tailwind is a styling approach; React, Next.js, and Vite help structure web projects. Understanding their roles helps you ask useful questions.
 
 Anything delivered to a browser can be inspected. Keep privileged database and payment credentials out of client code. Ask which operations run in the browser versus a trusted server or edge function, and where environment variables are used.
+
+This walkthrough shows integrations in Friday Code. Check the current connection flow and permissions in your own project before granting access.
+
+<video controls playsinline preload="metadata" aria-label="Integrations in Friday Code">
+  <source src="Videos/Friday%20Code-Integrations-Dark.mp4" type="video/mp4">
+  Your browser does not support embedded video. <a href="Videos/Friday%20Code-Integrations-Dark.mp4">Open the video</a>.
+</video>
 
 An edge function is server-side code that can perform a trusted operation without exposing its secret to the browser. For example, a directory might use one to send an administrator a submission notice. Keep the function narrow: validate input, check authorization, and return only what the client needs. Ask Friday what input it accepts, what identity it checks, and how errors are reported.
 
@@ -137,6 +144,10 @@ Build a directory for one narrowly defined community, such as independent bicycl
 6. Use Design Mode to address one observed usability issue. Check the page at phone and desktop widths.
 7. Connect GitHub, create clear checkpoints, and deploy a test version.
 8. Invite a few target users to complete the main task. Record where they hesitate and make one evidence-based improvement.
+
+**Copy/paste prompt**
+
+> Help me build a small directory for [specific audience] in [location or niche]. Visitors should [main task], contributors should [submission task], and an administrator should [review task]. First return a short plan with screens, data fields, roles, access rules, assumptions, and acceptance tests. Do not change files until I approve the plan. Then implement one milestone at a time, using test data, and report the files changed and how each role's permissions can be verified. Keep [out-of-scope features] out of the first version.
 
 **Success criteria**
 

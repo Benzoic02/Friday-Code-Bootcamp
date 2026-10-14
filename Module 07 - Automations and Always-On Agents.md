@@ -1,4 +1,4 @@
-# Module 07: Automations and Always-On Agents
+# Module 07: Automate a Workflow
 
 ## Make useful work happen on a schedule, without giving away control
 
@@ -34,6 +34,13 @@ This description is the automation's contract. It prevents a broad request like 
 ## Long-running agents, schedules, and background continuation
 
 A long-running agent can work through a larger task over time. A schedule can start a task at a recurring interval, while background continuation or a minimized app state can let work proceed without occupying your attention. These ideas are related, but not interchangeable: a task that continues in the background is not automatically a recurring schedule, and a schedule does not guarantee that every run will finish successfully.
+
+This walkthrough demonstrates automations in Friday Code. Treat it as an interface overview; verify what each automation can access and do before enabling it.
+
+<video controls playsinline preload="metadata" aria-label="Automations in Friday Code">
+  <source src="Videos/Friday%20Code-Automations-Dark.mp4" type="video/mp4">
+  Your browser does not support embedded video. <a href="Videos/Friday%20Code-Automations-Dark.mp4">Open the video</a>.
+</video>
 
 Treat each run as a separate attempt with an inspectable result. Decide how often it needs to run: a weekly digest may be enough, while hourly checks can waste credits and create noise. Keep tasks narrow, specify the expected report format, and request source links where possible.
 
@@ -130,6 +137,10 @@ Build a small weekly workflow for one real or invented product. It should gather
 6. Estimate monthly cost at the chosen cadence. Reduce the scope or frequency if the estimate is not comfortable.
 7. If your setup supports scheduling and you are satisfied with the manual tests, schedule a limited trial. Keep a human review step and know how to pause it.
 8. After two or more runs, compare usefulness, errors, time saved, and cost. Decide whether to keep, adjust, or retire the workflow.
+
+**Copy/paste prompt**
+
+> Help me design a safe automation for [repeated task]. Its trigger is [trigger], its approved inputs are [sources], and its useful output is [output]. First write the workflow contract: trigger, input, steps, output, permissions, limits, failure behavior, owner, and stop condition. For the first test, use only [small sample] and produce a reviewable draft. Do not send messages, publish, modify important data or production code, spend money, or schedule recurring runs. Flag missing or uncertain information instead of guessing. Wait for my approval before any action beyond the manual test.
 
 ### Success criteria
 

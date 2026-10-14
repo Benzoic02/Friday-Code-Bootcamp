@@ -1,4 +1,4 @@
-# Module 04: Research, Competitive Intelligence and Idea Validation
+# Module 04: Find a Problem Worth Solving
 
 ## The goal: build the right thing
 
@@ -135,6 +135,10 @@ Choose a narrow audience and one repetitive job, such as collecting client appro
 5. Speak with three to five target users, with consent, about recent behavior and workarounds.
 6. Prepare a one-page brief separating evidence, interpretation, and unknowns. Choose a low-cost experiment with a success threshold and stop condition.
 7. Record what changed, or why evidence strengthened the original hypothesis.
+
+**Copy/paste prompt**
+
+> Help me investigate this question: [research question]. Limit the work to [audience, geography, and date range] and use only these approved public sources or source types: [sources]. First propose search queries and an evidence table. For every finding, include its source URL, the exact supporting passage or a short quotation, and the date checked when available. Separate evidence from interpretation, label unknowns, and include evidence that could disprove my assumption. Do not invent links, quotes, or facts, and do not contact people or make a product decision for me.
 
 Do not contact people deceptively, scrape personal contact details, or imply you have a finished product when you do not. A small number of thoughtful conversations can teach more than a large, intrusive list.
 

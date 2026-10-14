@@ -42,7 +42,7 @@ Every module emphasizes shipping something real, getting feedback, and building 
 
 ---
 
-## Module 1: Setup & Your First Shipped Product
+## Module 1: Ship Your First Product
 
 **Goal:** Install Friday, understand the core loop, and get something live on the internet.
 
@@ -62,7 +62,7 @@ A “Validate This Idea in 48 Hours” kit — Friday builds the landing page, g
 
 ---
 
-## Module 2: Building Real Full-Stack Web MVPs
+## Module 2: Build a Web App
 
 **Goal:** Move beyond static pages to products people can actually use.
 
@@ -85,7 +85,7 @@ Build a focused micro-SaaS or tool (example: a simple AI-powered calculator, dir
 
 ---
 
-## Module 3: Building iOS and Android Apps
+## Module 3: Build a Mobile App
 
 **Goal:** Ship native-feeling mobile apps that you can preview on real devices and eventually submit to the stores.
 
@@ -111,7 +111,7 @@ Convert one of your earlier web ideas into a focused mobile app (or build a new 
 
 ---
 
-## Module 4: Research, Competitive Intelligence & Idea Validation
+## Module 4: Find a Problem Worth Solving
 
 **Goal:** Use Friday as a research analyst so you build the right thing.
 
@@ -130,7 +130,7 @@ Convert one of your earlier web ideas into a focused mobile app (or build a new 
 
 ---
 
-## Module 5: Growth Systems — Outreach, Content & Distribution
+## Module 5: Find Your First Users
 
 **Goal:** Build systems that help you find and talk to users.
 
@@ -148,7 +148,7 @@ Convert one of your earlier web ideas into a focused mobile app (or build a new 
 
 ---
 
-## Module 6: Automating Video Production with Kling and ElevenLabs
+## Module 6: Make a Product Video
 
 **Goal:** Build systems that generate product demos, social clips, explainers, and marketing videos with minimal manual work.
 
@@ -175,7 +175,7 @@ Create an automated video pipeline for one of your products (e.g., weekly featur
 
 ---
 
-## Module 7: Automations & Always-On Agents
+## Module 7: Automate a Workflow
 
 **Goal:** Make Friday work while you sleep or focus on other things.
 
@@ -194,7 +194,7 @@ Create an automated video pipeline for one of your products (e.g., weekly featur
 
 ---
 
-## Module 8: Multi-Agent Orchestration for Complex Products
+## Module 8: Build an Agent
 
 **Goal:** Handle bigger ideas by splitting work across agents.
 
@@ -212,7 +212,7 @@ Create an automated video pipeline for one of your products (e.g., weekly featur
 
 ---
 
-## Module 9: Productionizing & Monetizing What You Build
+## Module 9: Launch and Monetize
 
 **Goal:** Turn prototypes into things people pay for or rely on.
 
@@ -230,7 +230,7 @@ Take one of your earlier builds and add payments, polish the core flow, and prep
 
 ---
 
-## Module 10: Capstone — Build Your Own Product System
+## Module 10: Build Your Product System
 
 Students design and ship a complete system tailored to their goals. The capstone must include a live product, at least one automation, clear documentation of the agent strategy, and a short reflection on leverage and speed.
 

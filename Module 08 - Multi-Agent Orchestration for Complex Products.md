@@ -1,10 +1,10 @@
-# Module 08: Multi-Agent Orchestration for Complex Products
+# Module 08: Build an Agent
 
-## Split a big idea into coordinated, reviewable work
+## Build a coordinated agent workflow with clear roles and review
 
 ### Module goal
 
-In this module, you will learn to handle a complex product idea by dividing it into work that different agents can do in parallel, then bringing those results together under clear human direction. You will practice parallel agents and sub-agents, role or skill tagging such as `@designer`, `@copywriter`, and `@developer`, custom agents and MCP extensions, Kanban-style coordination, review and iteration, and model routing.
+In this module, you will build a small agent workflow for a complex product idea by dividing it into work that different agents can do in parallel, then bringing those results together under clear human direction. You will practice parallel agents and sub-agents, role or skill tagging such as `@designer`, `@copywriter`, and `@developer`, custom agents and MCP extensions, Kanban-style coordination, review and iteration, and model routing.
 
 Multi-agent work is not asking several agents the same question. It lets independent work proceed in parallel and gives specialized tasks focus. More agents can also mean higher costs, conflicting assumptions, duplicated work, or harder-to-trace defects. The founder remains product owner: define the goal, share the source of truth, review decisions, and approve consequential actions.
 
@@ -38,6 +38,13 @@ Add the current stack, repository, design references, and data rules when known.
 ## Assigning roles and skill tags
 
 Role tags such as `@designer`, `@copywriter`, and `@developer` can signal the expertise needed, where supported. A tag does not guarantee a result or replace a task description. State inputs, format, constraints, and handoff explicitly.
+
+This walkthrough introduces agent skills in Friday Code. Use available skills as task helpers, and confirm their instructions and permissions before relying on them.
+
+<video controls playsinline preload="metadata" aria-label="Agent skills in Friday Code">
+  <source src="Videos/Friday%20Code-AgentSkills-Light.mp4" type="video/mp4">
+  Your browser does not support embedded video. <a href="Videos/Friday%20Code-AgentSkills-Light.mp4">Open the video</a>.
+</video>
 
 For TrailNote:
 
@@ -149,6 +156,10 @@ Use TrailNote or your own idea. Coordinate distinct contributions and show that 
 7. Have one owner make a small prototype change and a separate reviewer check acceptance criteria without editing.
 8. Require approval before messaging, publishing, changing important data, spending, or modifying production code. Use a safe test environment.
 9. Review time, cost, quality, and coordination overhead. Remove roles that add no value.
+
+**Copy/paste prompt**
+
+> Help me coordinate a small agent workflow for [product goal]. Use this brief as the source of truth: [audience, problem, scope, constraints, and success measure]. Propose no more than three independent roles. For each, specify its single deliverable, inputs, boundaries, dependencies, and acceptance check. Identify what must wait for review and who integrates the work. Do not let agents edit the same files, access secrets, contact people, publish, spend money, or change production. First return the plan only; wait for my approval before starting any task.
 
 ### Success criteria
 
