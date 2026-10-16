@@ -256,23 +256,22 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
   align-items: flex-start;
   gap: 18px;
   justify-content: flex-end;
-  width: min(100%, 1000px);
+  width: min(100%, 1040px);
   margin: 0 0 0 auto;
 }
 
 .lesson-body {
   flex: 1 1 auto;
   min-width: 0;
-  max-width: 710px;
+  max-width: 720px;
 }
 
 .lesson-checklist {
-  position: sticky;
-  top: 92px;
-  width: 250px;
+  position: fixed;
+  top: 110px;
+  right: clamp(22px, 3.8vw, 72px);
+  width: 320px;
   max-height: calc(100vh - 220px);
-  flex: 0 0 250px;
-  margin: 0 0 0 auto;
   padding: 10px 10px 8px;
   border: 1px solid color-mix(in srgb, var(--line) 86%, transparent);
   border-radius: 14px;
@@ -429,9 +428,12 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
   }
 
   .lesson-checklist {
-    width: 100%;
-    margin: 22px 0 12px;
     position: static;
+    width: 100%;
+    max-width: none;
+    margin: 22px 0 12px;
+    right: auto;
+    top: auto;
     flex-basis: auto;
   }
 }
