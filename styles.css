@@ -251,24 +251,15 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
 .hero-divider::after { width: 48px; height: 1px; background: var(--line); content: ""; }
 
 .lesson-layout {
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
-  justify-content: flex-end;
-  width: min(100%, 1040px);
-  margin: 0 0 0 auto;
+  display: block;
+  width: 100%;
+  margin: 0;
 }
 
 .lesson-body {
-  flex: 1 1 auto;
+  width: 100%;
   min-width: 0;
-  max-width: 720px;
-}
-
-@media (max-width: 880px) {
-  .lesson-layout {
-    display: block;
-  }
+  max-width: none;
 }
 
 .lesson-content h2 { margin: 49px 0 16px; padding-top: 2px; font-size: clamp(25px, 3.6vw, 34px); font-weight: 700; letter-spacing: -.045em; line-height: 1.18; scroll-margin-top: 90px; }
