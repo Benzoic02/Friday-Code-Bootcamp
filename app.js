@@ -259,6 +259,25 @@
       card.append(header, quote);
       marker.replaceWith(card);
     });
+    temporary.querySelectorAll("h2, h3, h4, h5, h6").forEach((heading) => {
+      if (!/^checklist$/i.test(heading.textContent.trim())) return;
+      let section = heading.nextElementSibling;
+      while (section && !/^H[1-6]$/.test(section.tagName)) {
+        if (section.tagName === "UL" || section.tagName === "OL") {
+          section.classList.add("interactive-checklist");
+          section.querySelectorAll(":scope > li").forEach((item, index) => {
+            const checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.className = "checklist-toggle";
+            checkbox.setAttribute("aria-label", "Mark checklist item " + (index + 1) + " complete");
+            item.classList.add("checklist-item");
+            item.prepend(checkbox);
+          });
+        }
+        section = section.nextElementSibling;
+      }
+    });
+
     const sourceTitle = temporary.querySelector("h1");
     const title = sourceTitle ? sourceTitle.textContent.trim() : lesson.label;
     if (sourceTitle) sourceTitle.remove();
@@ -318,6 +337,18 @@
 
 
     content.appendChild(layout);
+    const checklistStorageKey = "friday-checklist-" + lesson.id;
+    let checklistState = {};
+    try { checklistState = JSON.parse(localStorage.getItem(checklistStorageKey) || "{}"); } catch (_) {}
+    lessonBody.querySelectorAll(".checklist-toggle").forEach((checkbox, index) => {
+      checkbox.checked = Boolean(checklistState[index]);
+      checkbox.addEventListener("change", () => {
+        checklistState[index] = checkbox.checked;
+        try { localStorage.setItem(checklistStorageKey, JSON.stringify(checklistState)); } catch (_) {}
+        checkbox.closest("li").classList.toggle("is-checked", checkbox.checked);
+      });
+      checkbox.closest("li").classList.toggle("is-checked", checkbox.checked);
+    });
     content.querySelectorAll(".copy-prompt-button").forEach((button) => {
       button.addEventListener("click", async () => {
         const prompt = button.closest(".copy-prompt").querySelector("blockquote").textContent.trim();

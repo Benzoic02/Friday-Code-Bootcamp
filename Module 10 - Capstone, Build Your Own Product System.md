@@ -186,8 +186,7 @@ Your capstone is the start of a practice, not a finish line. Keep the product sm
 5. Deploy a safe version and collect pilot feedback from the intended user group.
 6. Reflect on what became faster, what still needed human judgment, and what you would improve next.
 
-### Visual checklist
-
+### Checklist
 - ✅ User and problem are clear
 - ✅ Scope is narrow enough to test
 - ✅ Core workflow is defined before extra features

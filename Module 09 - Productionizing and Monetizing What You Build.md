@@ -129,8 +129,7 @@ Productionizing is the practice of making promises carefully and keeping them. A
 5. Run a small real-world pilot and ask for feedback on the actual workflow.
 6. Choose the next revenue or reliability improvement based on evidence, not vibes.
 
-### Visual checklist
-
+### Checklist
 - ✅ User and problem are clear
 - ✅ Scope is narrow enough to test
 - ✅ Core workflow is defined before extra features

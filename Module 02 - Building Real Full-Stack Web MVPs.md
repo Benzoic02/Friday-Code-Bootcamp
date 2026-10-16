@@ -179,8 +179,7 @@ Your code does not need to be perfect or large. It should be understandable enou
 5. Test what visitors, contributors, and admins can each view and do.
 6. Deploy a working version and collect real feedback on the core workflow.
 
-### Visual checklist
-
+### Checklist
 - ✅ User and problem are clear
 - ✅ Scope is narrow enough to test
 - ✅ Core workflow is defined before extra features

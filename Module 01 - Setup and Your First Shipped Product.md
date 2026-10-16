@@ -174,8 +174,7 @@ The most important result is a completed learning loop. A small product put in f
 5. Test the page on mobile and desktop, including success and failure states.
 6. Deploy, share with a few real people, and capture what they misunderstood or wanted.
 
-### Visual checklist
-
+### Checklist
 - ✅ User and problem are clear
 - ✅ Scope is narrow enough to test
 - ✅ Core workflow is defined before extra features

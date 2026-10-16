@@ -176,8 +176,7 @@ Give Friday a clear question, source boundaries, desired structure, and rules fo
 5. Rank the most important product risks before investing more time or code.
 6. Choose the next action with evidence, then repeat the validation loop.
 
-### Visual checklist
-
+### Checklist
 - ✅ User and problem are clear
 - ✅ Scope is narrow enough to test
 - ✅ Core workflow is defined before extra features

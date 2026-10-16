@@ -165,8 +165,7 @@ Friday can make the process faster, but not make an irrelevant offer valuable or
 5. Track replies, refusals, and useful learnings in a simple system.
 6. Publish one verified piece of content or update and use the response to improve the next message.
 
-### Visual checklist
-
+### Checklist
 - ✅ User and problem are clear
 - ✅ Scope is narrow enough to test
 - ✅ Core workflow is defined before extra features

@@ -187,8 +187,7 @@ A multi-agent product factory can eventually connect research, design, code, mar
 5. Test the whole workflow with realistic examples and capture the friction points.
 6. Improve the interfaces between roles, not just the individual steps.
 
-### Visual checklist
-
+### Checklist
 - ✅ User and problem are clear
 - ✅ Scope is narrow enough to test
 - ✅ Core workflow is defined before extra features

@@ -173,8 +173,7 @@ The right first mobile app is not the one with the most screens. It is the one t
 5. Preview on a real device and check keyboard, touch targets, and connectivity.
 6. Connect the app carefully, test permissions, and document what remains for release.
 
-### Visual checklist
-
+### Checklist
 - ✅ User and problem are clear
 - ✅ Scope is narrow enough to test
 - ✅ Core workflow is defined before extra features

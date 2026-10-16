@@ -188,8 +188,7 @@ Keep human review for scripts, likeness or voice use, paid generation, and publi
 5. Trim filler, fix mismatches, and confirm that the final message matches the product.
 6. Publish or reuse the asset with a clear understanding of what it does and does not prove.
 
-### Visual checklist
-
+### Checklist
 - ✅ User and problem are clear
 - ✅ Scope is narrow enough to test
 - ✅ Core workflow is defined before extra features

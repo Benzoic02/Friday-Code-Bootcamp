@@ -164,8 +164,7 @@ Your project is complete when you can show a written workflow contract, a tested
 5. Add logging, alerts, and a way to inspect what the automation did each time.
 6. Keep the automation narrow, measured, and easy to disable when quality drops.
 
-### Visual checklist
-
+### Checklist
 - ✅ User and problem are clear
 - ✅ Scope is narrow enough to test
 - ✅ Core workflow is defined before extra features
