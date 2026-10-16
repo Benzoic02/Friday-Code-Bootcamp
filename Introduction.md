@@ -72,31 +72,3 @@ Success is a working product that solves a stated problem for someone, plus a cl
 
 Expect imperfect drafts, edge cases, outages, and tradeoffs. Reduce scope, protect data, test safely, and review consequential actions. Confidence comes not from eliminating uncertainty, but from turning it into a small experiment and a better product.
 
-## Quick-start checklist
-
-### What you are building
-
-- This course helps you move from an idea to a real product using a practical build-test-learn loop.
-- Learn the core rhythm: define a user, choose a small job, build, test, and improve.
-- Use Friday as a directing tool, not a replacement for decisions about risk, privacy, or product value.
-- Create a portfolio of working experiments, not just notes or mockups.
-
-### Your workflow in 6 easy steps
-
-1. Pick one real problem and write the user, job, and success metric in plain language.
-2. Choose a tiny first version that can be tested quickly without extra complexity.
-3. Ask Friday for a plan, assumptions, and risks before editing code or spending budget.
-4. Build one path end-to-end and test it as a real user would.
-5. Review the result, capture what happened, and pick the next improvement.
-6. Ship a small, honest result and repeat the loop with evidence.
-
-### Checklist
-
-- User and problem are clear
-- Scope is narrow enough to test
-- Core workflow is defined before extra features
-- Real validation happens before launch
-- A next improvement is recorded for the next cycle
-
-> Pro tip: treat every module as a build-test-learn loop. The goal is not perfection, it is clarity, evidence, and a usable result that can be improved with the next test.
-
