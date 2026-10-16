@@ -6,7 +6,7 @@ An idea can sound exciting and still be wrong for the people you hope to serve. 
 
 Friday can help search, extract, compare, and structure information. Firecrawl may support web workflows when connected; access and controls vary. Treat agent findings as leads to verify. You remain responsible for interpreting the evidence.
 
-You will create a research brief, compare competitors or substitutes, and design a validation experiment.
+You will create a research brief, compare competitors or substitutes, and design a validation experiment.\n\n![Problem-solving: use evidence to choose what to build](Images/problem-solving.svg)
 
 ## Start with a research question
 
