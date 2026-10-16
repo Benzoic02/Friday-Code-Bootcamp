@@ -90,7 +90,7 @@ Expect imperfect drafts, edge cases, outages, and tradeoffs. Reduce scope, prote
 5. Review the result, capture what happened, and pick the next improvement.
 6. Ship a small, honest result and repeat the loop with evidence.
 
-### Visual checklist
+### Checklist
 
 - ✅ User and problem are clear
 - ✅ Scope is narrow enough to test
