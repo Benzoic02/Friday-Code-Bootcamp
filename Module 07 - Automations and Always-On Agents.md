@@ -66,6 +66,13 @@ The same design pattern can support several useful workflows:
 - **Feedback synthesis:** Group approved form responses into themes and identify follow-up questions. Do not treat a small sample as representative or silently change customer records.
 - **Bug monitoring:** Summarize supplied issues or alerts, suggest severity, and draft a GitHub issue. A person confirms reports and code changes.
 - **Content preparation:** Draft blog or social copy from a verified product update. Check claims, rights, and tone; a draft is not permission to publish.
+
+Friday AI’s blog is an example of a more complete content workflow: Friday Code automates the process from preparing the blog post to creating its accompanying images, so the blog can be produced as a coordinated package rather than text alone. Keep the workflow grounded in verified source material, and review factual claims, image rights, quality, and publication approval before anything goes live.
+
+<figure class="lesson-figure">
+  <img src="Images/fridayai-blog-automation.png" alt="Friday Code automation for producing Friday AI blog posts and accompanying images" loading="lazy">
+  <figcaption>Friday Code automates Friday AI’s blog workflow—including the creation of images that accompany each post.</figcaption>
+</figure>
 - **Video triggers:** A changelog update might trigger a script or scene draft. Confirm paid generation and review the video and narration before distribution.
 - **Knowledge-base maintenance:** Find stale or duplicate Supabase wiki articles and propose edits. Preserve source authority and require approval before overwriting shared guidance.
 
