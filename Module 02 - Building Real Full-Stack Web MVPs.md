@@ -12,7 +12,7 @@ Friday can help plan and build, connect a backend, iterate on the interface, wor
 
 A browser game makes the difference concrete: the interface displays the board, the player supplies input, and the app updates the game state. It is also a useful MVP test: can a player understand the goal, make a move, and see an immediate response? Keeping this first version focused on that loop makes the core experience testable before adding secondary features.
 
-**aetheria.tryfriday.app**
+[aetheria.tryfriday.app](https://aetheria.tryfriday.app)
 
 ![Example of a playable web game built as a focused web app](Images/game-example.png)
 

@@ -14,7 +14,7 @@ Start by deciding what this first project must do. For the module exercise, it n
 
 Set aside a project folder that is easy to find, such as `Projects/validate-this-idea`, and keep project files together. Download Friday Code from [tryfriday.ai](https://www.tryfriday.ai/code), then install the desktop app using its current instructions. Open or create a local project in that folder. Exact labels and setup options may vary by version, so use current product guidance rather than guessing.
 
-[![Screenshot of the Friday Code download page. Open the image to view the original full-resolution screenshot.](Images/Screenshot 2026-10-13 122304.png)](Images/Screenshot 2026-10-13 122304.png)
+[![Screenshot of the Friday Code download page. Open the image to view the original full-resolution screenshot.](<Images/Screenshot 2026-10-13 122304.png>)](<Images/Screenshot 2026-10-13 122304.png>)
 
 Before giving an agent a large request, confirm that Friday can open the intended folder and that you understand where project files will live. This avoids a surprisingly common first-day error: asking for a build, then discovering that it was made in a different directory from the one you expected.
 
