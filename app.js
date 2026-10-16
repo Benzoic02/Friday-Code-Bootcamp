@@ -235,7 +235,7 @@
     const safeHtml = window.DOMPurify.sanitize(rawHtml, {
       USE_PROFILES: { html: true },
       ADD_TAGS: ["video", "source"],
-      ADD_ATTR: ["controls", "playsinline", "preload", "type", "src", "role", "aria-label"],
+      ADD_ATTR: ["controls", "playsinline", "preload", "type", "src"],
       FORBID_TAGS: ["style", "iframe", "form", "input", "button", "textarea", "select"],
       FORBID_ATTR: ["style"]
     });
@@ -324,6 +324,7 @@
       ${introImage}
       ${description ? `<p class="lesson-deck">${escapeHtml(description)}</p>` : ""}
       ${introSnapshot}
+      ${lesson.id === "introduction" ? '<div class="hero-divider"><span>THE COURSE</span></div>' : ""}
     </header>`;
 
     const lessonBody = document.createElement("div");
