@@ -212,10 +212,9 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
 .theme-icon-moon { display: none; }
 :root[data-theme="light"] .theme-icon-sun { display: none; }
 :root[data-theme="light"] .theme-icon-moon { display: block; }
-.reading-progress { height: 2px; background: transparent; }
-.reading-progress span { display: block; width: 0; height: 100%; background: var(--accent); transition: width 100ms linear; }
+.reading-progress { display: none; }
 
-.content-wrap { width: min(100%, 1180px); min-height: calc(100vh - 125px); margin: 0 auto; padding: 54px clamp(22px, 4.5vw, 72px) 84px; }
+.content-wrap { width: min(100%, 1040px); min-height: calc(100vh - 125px); margin: 0 auto; padding: 54px clamp(22px, 7vw, 104px) 84px; }
 .lesson-content { outline: none; }
 .lesson-hero { position: relative; padding: 20px 0 32px; }
 .lesson-hero::after { position: absolute; z-index: -1; top: -20px; right: 3%; width: 240px; height: 180px; border-radius: 50%; background: radial-gradient(ellipse, color-mix(in srgb, var(--accent) 10%, transparent), transparent 70%); content: ""; filter: blur(18px); pointer-events: none; }
@@ -258,7 +257,6 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
   justify-content: flex-end;
   width: min(100%, 1040px);
   margin: 0 0 0 auto;
-  padding-right: 344px;
 }
 
 .lesson-body {
@@ -426,7 +424,6 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
 @media (max-width: 880px) {
   .lesson-layout {
     display: block;
-    padding-right: 0;
   }
 
   .lesson-checklist {
