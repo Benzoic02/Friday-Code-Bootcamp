@@ -4,6 +4,12 @@
 
 A landing page presents information. A full-stack product also accepts input, remembers data, identifies users, and enforces permissions. “Full stack” means its interface and behind-the-scenes services work together.
 
+A web product connects a person’s action to saved, permission-aware data:
+
+<div class="lesson-visual-flow" role="img" aria-label="Web product flow: user interface, application logic, secure data storage"><div class="lesson-visual-node"><span>01</span><strong>Interface</strong><small>Collect a clear input</small></div><b class="lesson-visual-arrow" aria-hidden="true">→</b><div class="lesson-visual-node"><span>02</span><strong>App logic</strong><small>Validate and respond</small></div><b class="lesson-visual-arrow" aria-hidden="true">→</b><div class="lesson-visual-node"><span>03</span><strong>Database</strong><small>Save with permissions</small></div></div>
+
+*Figure: A full-stack feature carries a user action through logic into safely stored data.*
+
 The goal is a focused micro-SaaS or useful tool that a small group can actually use. Examples from the course outline include a niche directory with submissions and admin approval, a personal CRM or deal tracker, a freelancer client portal, and a Living Style Guide Generator that analyzes a brand website plus Figma and produces an interactive component library. These are examples to learn from, not promises that every integration or analysis happens automatically.
 
 Friday can help plan and build, connect a backend, iterate on the interface, work with GitHub, and support deployment. You decide the data model, review permissions, test journeys, and understand what you publish. Labels and options may vary by version.

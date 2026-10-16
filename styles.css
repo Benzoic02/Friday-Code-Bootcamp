@@ -45,7 +45,7 @@
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
-img { image-rendering: pixelated; }
+img { max-width: 100%; height: auto; image-rendering: auto; }
 
 html { min-width: 320px; scroll-behavior: smooth; }
 
@@ -263,6 +263,19 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
 }
 
 
+
+.lesson-body img { display: block; max-width: 100%; height: auto; margin: 24px auto 8px; border: 1px solid var(--line); border-radius: 14px; }
+.lesson-body a:has(> img) { display: block; width: fit-content; max-width: 100%; margin-inline: auto; }
+.lesson-figure { width: 100%; margin: 28px 0 34px; padding: 20px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface, var(--bg)); }
+.lesson-figure img { width: 100%; max-height: 440px; object-fit: contain; margin: 0 auto; border: 0; border-radius: 8px; }
+.lesson-figure figcaption { margin: 14px auto 0; color: var(--subtle); font-size: 13px; line-height: 1.55; text-align: center; }
+.lesson-visual-flow { display: flex; align-items: stretch; justify-content: center; gap: 10px; margin: 26px 0 10px; padding: 20px; border: 1px solid var(--line); border-radius: 18px; background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 7%, var(--bg)), var(--bg)); }
+.lesson-visual-node { display: flex; flex: 1 1 0; min-width: 0; flex-direction: column; justify-content: center; gap: 6px; padding: 16px 14px; border: 1px solid var(--line); border-radius: 13px; background: var(--bg); box-shadow: 0 6px 16px rgb(0 0 0 / 4%); }
+.lesson-visual-node > span { color: var(--accent); font-family: var(--font-mono); font-size: 10px; letter-spacing: .1em; }
+.lesson-visual-node strong { font-size: 14px; line-height: 1.3; }
+.lesson-visual-node small { color: var(--subtle); font-size: 11px; line-height: 1.45; }
+.lesson-visual-arrow { align-self: center; color: var(--accent); font-size: 20px; font-weight: 700; }
+
 .lesson-content h2 { margin: 49px 0 16px; padding-top: 2px; font-size: clamp(25px, 3.6vw, 34px); font-weight: 700; letter-spacing: -.045em; line-height: 1.18; scroll-margin-top: 90px; }
 .lesson-content h3 { margin: 30px 0 12px; font-size: 20px; font-weight: 700; letter-spacing: -.025em; line-height: 1.3; scroll-margin-top: 90px; }
 .lesson-content h4, .lesson-content h5, .lesson-content h6 { margin: 25px 0 10px; font-size: 16px; font-weight: 700; scroll-margin-top: 90px; }
@@ -381,4 +394,15 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+@media (max-width: 700px) {
+  .lesson-visual-flow { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 8px; padding: 13px; }
+  .lesson-visual-node { padding: 12px 10px; }
+  .lesson-visual-arrow { font-size: 16px; }
+  .lesson-figure { padding: 12px; }
+}
+@media (max-width: 430px) {
+  .lesson-visual-flow { grid-template-columns: 1fr; }
+  .lesson-visual-arrow { transform: rotate(90deg); justify-self: center; }
 }

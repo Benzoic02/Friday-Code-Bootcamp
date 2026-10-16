@@ -8,6 +8,14 @@ Friday supports mobile app generation, primarily using React Native and Expo, wi
 
 The goal is to direct a useful first build, test it on real hardware, and understand the steps between preview and release. You remain responsible for privacy, reliability, and honest store descriptions.
 
+## Visualize the mobile journey
+
+Design around the task a person needs to finish, one focused screen at a time:
+
+<div class="lesson-visual-flow" role="img" aria-label="Mobile flow: user need, focused screen, action, saved result"><div class="lesson-visual-node"><span>01</span><strong>User need</strong><small>Capture the moment</small></div><b class="lesson-visual-arrow" aria-hidden="true">→</b><div class="lesson-visual-node"><span>02</span><strong>Focused screen</strong><small>Show the next step</small></div><b class="lesson-visual-arrow" aria-hidden="true">→</b><div class="lesson-visual-node"><span>03</span><strong>Action</strong><small>Make it effortless</small></div><b class="lesson-visual-arrow" aria-hidden="true">→</b><div class="lesson-visual-node"><span>04</span><strong>Saved result</strong><small>Confirm what changed</small></div></div>
+
+*Figure: A reliable mobile interaction connects a real need to a clearly confirmed result.*
+
 ## 1. Decide whether an app is the right product
 
 Before converting a web product, ask why someone needs it on a phone. Strong reasons include repeated use while away from a desk, quick capture of information, access to a camera or other device capability, useful notifications, or an offline workflow. “A phone app looks more serious” is not enough.

@@ -235,7 +235,7 @@
     const safeHtml = window.DOMPurify.sanitize(rawHtml, {
       USE_PROFILES: { html: true },
       ADD_TAGS: ["video", "source"],
-      ADD_ATTR: ["controls", "playsinline", "preload", "type", "src"],
+      ADD_ATTR: ["controls", "playsinline", "preload", "type", "src", "role", "aria-label"],
       FORBID_TAGS: ["style", "iframe", "form", "input", "button", "textarea", "select"],
       FORBID_ATTR: ["style"]
     });

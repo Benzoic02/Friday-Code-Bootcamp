@@ -1,5 +1,14 @@
 # Module 01: Ship Your First Product
 
+
+## A simple decision loop
+
+Use this loop to keep a first build focused and learn from each release:
+
+<div class="lesson-visual-flow" role="img" aria-label="Choose a user problem, build the smallest useful solution, ship it, learn from use, and improve"><div class="lesson-visual-node"><span>01</span><strong>Choose</strong><small>One real problem</small></div><b class="lesson-visual-arrow" aria-hidden="true">→</b><div class="lesson-visual-node"><span>02</span><strong>Build</strong><small>Smallest useful fix</small></div><b class="lesson-visual-arrow" aria-hidden="true">→</b><div class="lesson-visual-node"><span>03</span><strong>Ship</strong><small>Put it in use</small></div><b class="lesson-visual-arrow" aria-hidden="true">→</b><div class="lesson-visual-node"><span>04</span><strong>Learn</strong><small>Improve with evidence</small></div></div>
+
+*Figure: A tight build–ship–learn loop turns a small product into a useful one.*
+
 ## What you will accomplish
 
 This module takes you from a product idea to a small, public website that can collect interest. You will install Friday Code, get comfortable with its working style, make informed choices about models and cost, and deploy a landing page or waitlist site. The point is not to master every setting before starting. It is to learn a repeatable loop: explain a useful outcome, review a plan, build a small version, test it, and put it in front of people.
@@ -14,7 +23,8 @@ Start by deciding what this first project must do. For the module exercise, it n
 
 Set aside a project folder that is easy to find, such as `Projects/validate-this-idea`, and keep project files together. Download Friday Code from [tryfriday.ai](https://www.tryfriday.ai/code), then install the desktop app using its current instructions. Open or create a local project in that folder. Exact labels and setup options may vary by version, so use current product guidance rather than guessing.
 
-[![Screenshot of the Friday Code download page. Open the image to view the original full-resolution screenshot.](<Images/Screenshot 2026-10-13 122304.png>)](<Images/Screenshot 2026-10-13 122304.png>)
+[![Screenshot of the Friday Code download page](Images/Screenshot%202026-10-13%20122304.png)](Images/Screenshot%202026-10-13%20122304.png)
+
 
 Before giving an agent a large request, confirm that Friday can open the intended folder and that you understand where project files will live. This avoids a surprisingly common first-day error: asking for a build, then discovering that it was made in a different directory from the one you expected.
 
