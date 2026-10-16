@@ -256,7 +256,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
   align-items: flex-start;
   gap: 18px;
   justify-content: flex-end;
-  width: min(100%, 960px);
+  width: min(100%, 1000px);
   margin: 0 0 0 auto;
 }
 
@@ -269,9 +269,9 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
 .lesson-checklist {
   position: sticky;
   top: 92px;
-  width: 248px;
+  width: 250px;
   max-height: calc(100vh - 220px);
-  flex: 0 0 248px;
+  flex: 0 0 250px;
   margin: 0 0 0 auto;
   padding: 10px 10px 8px;
   border: 1px solid color-mix(in srgb, var(--line) 86%, transparent);
@@ -350,7 +350,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
 .checklist-progress-text {
   color: var(--accent);
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 600;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -395,7 +395,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
 
 .checklist-item span {
   color: inherit;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
   line-height: 1.45;
 }
