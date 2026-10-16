@@ -172,6 +172,9 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .topbar-leading, .topbar-actions { display: flex; min-width: 0; align-items: center; }
 .topbar-actions { margin-left: auto; }
+.slack-link { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; margin-left: 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); transition: border-color 150ms ease, background-color 150ms ease, transform 150ms ease; }
+.slack-link:hover { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); transform: translateY(-1px); }
+.slack-link img { display: block; width: 20px; height: 20px; }
 .topbar { justify-content: space-between; }
 .status-dot { width: 6px; height: 6px; }
 .icon-button, .theme-toggle {

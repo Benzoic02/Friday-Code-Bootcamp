@@ -1,0 +1,16 @@
+const fs = require('fs');
+const p = 'index.html';
+let s = fs.readFileSync(p, 'utf8');
+const anchor = '              <span class="theme-label">Light mode</span>\r\n            </button>\r\n';
+const addition = '            <a class="slack-link" href="https://friday-code.slack.com/join/shared_invite/zt-46xg9tqj7-ysg08ox52JzSpr~ffsMydA" target="_blank" rel="noopener noreferrer" aria-label="Join Friday Code on Slack" title="Join Friday Code on Slack">\r\n              <img src="./Images/slack-svgrepo-com.svg" alt="">\r\n            </a>\r\n';
+if (!s.includes(anchor)) throw new Error('Theme button anchor not found');
+s = s.replace(anchor, anchor + addition);
+fs.writeFileSync(p, s, 'utf8');
+const css = 'styles.css';
+let c = fs.readFileSync(css, 'utf8');
+const cssAnchor = '.topbar-actions { margin-left: auto; }';
+const cssAddition = '\n.slack-link { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; margin-left: 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); transition: border-color 150ms ease, background-color 150ms ease, transform 150ms ease; }\n.slack-link:hover { border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); transform: translateY(-1px); }\n.slack-link img { display: block; width: 20px; height: 20px; }';
+if (!c.includes(cssAnchor)) throw new Error('Topbar actions CSS anchor not found');
+c = c.replace(cssAnchor, cssAnchor + cssAddition);
+fs.writeFileSync(css, c, 'utf8');
+console.log('Added Slack link and icon styling.');
