@@ -128,7 +128,7 @@ Review available usage or credit information before long or parallel work. Prici
 - **Overbuilding before feedback.** A small page can teach you more than an elaborate application built in isolation.
 - **Treating visits as validation.** Talk to relevant visitors and learn what they understood and need.
 
-## Project exercise: Validate This Idea in 48 Hours
+### The learning loop\n\n**Observe a real need → define one user and outcome → test the smallest useful version → learn and refine.** Let each step be evidence-led: a conversation informs the problem, a small test checks the riskiest assumption, and results shape the next step.\n\n## Project exercise: Validate This Idea in 48 Hours
 
 Choose one real problem you can describe in two sentences. Create a one-page site that introduces a possible solution and collects email addresses in a simple Supabase waitlist. Use Friday to generate the initial copy and a small set of ad creative ideas. Keep all claims truthful. Do not buy ads or contact people without considering platform rules, consent, and your budget. The purpose of creative is to test a message, not to disguise an unproven product as established.
 

@@ -123,7 +123,7 @@ In another editor, change one configuration at a time and record build steps. As
 - **Testing only one platform.** Check iOS and Android behaviors relevant to the intended audience.
 - **Treating preview as release.** Plan separately for builds, accounts, store policies, and support.
 
-## Project exercise: Mobile client visit logger
+### Mobile workflow at a glance\n\n**Need → screen → action → saved result.** Start from the moment a person needs the app, give that moment one clear screen and primary action, then make the outcome visible and dependable. Test touch, keyboard, loading, empty, and error states on a real device.\n\n## Project exercise: Mobile client visit logger
 
 Convert a web idea into a mobile companion app for a small freelance or sales team. The app should help a user record a visit quickly, review recent notes, and remember the next action. Use the same Supabase backend as the web version if one exists. If you prefer another outlined use case, such as an inventory checker or habit utility, preserve the focus on a small, repeatable mobile task.
 
