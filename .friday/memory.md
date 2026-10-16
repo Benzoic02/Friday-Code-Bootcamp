@@ -2,17 +2,17 @@
 - **Environment**: Windows local development.
 - **Project Location**: `C:\Users\neonn\Downloads\Friday Code Bootcamp`
 - **Core Files**: `app.js`, `styles.css`, `index.html`.
-- **Content Modules**: 10 Markdown files (e.g., `Module 1.md`) located in the root or `content/` directory.
-- **Runtime**: Node.js (used for local scripts, syntax validation, and preview server).
+- **Content Modules**: 10 Markdown files (e.g., `Module 01 - Setup and Your First Shipped Product.md`) located in the root directory.
+- **Runtime**: Node.js (for scripts, syntax validation, and preview server).
 - **Preview Port**: 4415.
 
 ### Design & Layout Conventions
 - **Responsiveness**: Responsive design using CSS breakpoints.
-- **Layout Consistency**: `.lesson-layout` and `.lesson-body` containers must share a 1040px max-width and center-alignment to ensure module info and main content are perfectly aligned.
-- **Component Styling**: Unused layout components (e.g., checklist sidebar) are purged. Checklist items are rendered as interactive checkboxes with custom hover/focus affordances.
-- **State Management**: Module-specific checkbox tick states are persisted in the browser using `localStorage` keyed to the specific module identifier.
+- **Layout Consistency**: `.lesson-layout` and `.lesson-body` containers must share a 1040px max-width and center-alignment.
+- **Checklist Styling**: Checklist headings are strictly labeled "Checklist". Items are rendered as interactive, persistent checkboxes via `localStorage`. Leading emoji markers (e.g., ✅) are prohibited within Markdown source to prevent display duplication.
+- **Image Assets**: Relative paths to `Images/` folder are used for inline content.
 
 ### Project Constraints
-- **File Management**: Direct file modifications via standard tools often trigger Windows file-lock errors. Terminal-based `node -e` patching or executing temporary helper scripts is the required workaround for `app.js` and `styles.css` updates.
-- **Tooling**: `rg` (ripgrep) is unavailable. Use `Get-ChildItem` with `Select-String` or Node.js-based file traversal (e.g., `fs.readdirSync`) for cross-module content inspection.
-- **Naming Conventions**: Checklist headings must strictly be labeled "Checklist" (no "Visual" prefix).
+- **File Management**: Direct editing via standard editors often triggers Windows file-lock errors. Modifications must be performed via `node -e` one-liners or dedicated patch scripts (e.g., `_finish-checklist-and-image.js`).
+- **Tooling**: `rg` (ripgrep) is unavailable. Use `Get-ChildItem` with `Select-String` or Node.js `fs` module for file traversal and inspection.
+- **Newline Handling**: Files utilize `CRLF` endings; scripts must be regex-compatible with `\r\n` or newline-agnostic patterns.
