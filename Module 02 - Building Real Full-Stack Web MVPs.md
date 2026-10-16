@@ -1,6 +1,6 @@
 # Module 02: Build a Web App
 
-## What changes when a site becomes a product
+## What changes when a site becomes a product\r\n\r\n![Game example illustrating a built web app](Images/game-example.png)\r\n
 
 A landing page presents information. A full-stack product also accepts input, remembers data, identifies users, and enforces permissions. “Full stack” means its interface and behind-the-scenes services work together.
 

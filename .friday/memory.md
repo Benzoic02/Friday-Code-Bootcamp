@@ -2,14 +2,17 @@
 - **Environment**: Windows local development.
 - **Project Location**: `C:\Users\neonn\Downloads\Friday Code Bootcamp`
 - **Core Files**: `app.js`, `styles.css`, `index.html`.
-- **Runtime**: Node.js (used for local scripts and preview server).
+- **Content Modules**: 10 Markdown files (e.g., `Module 1.md`) located in the root or `content/` directory.
+- **Runtime**: Node.js (used for local scripts, syntax validation, and preview server).
 - **Preview Port**: 4415.
 
 ### Design & Layout Conventions
-- **Responsiveness**: The project follows a responsive design using CSS breakpoints for mobile and desktop views.
-- **Layout Consistency**: The `.lesson-layout` and `.lesson-body` containers must share identical max-width and centering alignment to ensure the module information and main content are perfectly aligned in the web view.
-- **Component Styling**: Unused layout components and CSS blocks related to removed features (e.g., the former checklist sidebar) must be fully purged to avoid layout gaps or empty columns.
+- **Responsiveness**: Responsive design using CSS breakpoints.
+- **Layout Consistency**: `.lesson-layout` and `.lesson-body` containers must share a 1040px max-width and center-alignment to ensure module info and main content are perfectly aligned.
+- **Component Styling**: Unused layout components (e.g., checklist sidebar) are purged. Checklist items are rendered as interactive checkboxes with custom hover/focus affordances.
+- **State Management**: Module-specific checkbox tick states are persisted in the browser using `localStorage` keyed to the specific module identifier.
 
 ### Project Constraints
-- **File Management**: Direct file modifications via standard tools may encounter file-lock errors on this Windows environment; terminal-based `node -e` patching is the preferred workaround for CSS/JS updates.
-- **Tooling**: `rg` (ripgrep) is unavailable; use `Get-ChildItem` with `Select-String` or Node.js-based file searching for cross-module content inspection.
+- **File Management**: Direct file modifications via standard tools often trigger Windows file-lock errors. Terminal-based `node -e` patching or executing temporary helper scripts is the required workaround for `app.js` and `styles.css` updates.
+- **Tooling**: `rg` (ripgrep) is unavailable. Use `Get-ChildItem` with `Select-String` or Node.js-based file traversal (e.g., `fs.readdirSync`) for cross-module content inspection.
+- **Naming Conventions**: Checklist headings must strictly be labeled "Checklist" (no "Visual" prefix).
