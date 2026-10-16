@@ -2,11 +2,17 @@
 
 ## The goal: build the right thing
 
-An idea can sound exciting and still be wrong for the people you hope to serve. Research reduces the cost of being wrong. In this module, you will use Friday as a research analyst: gather evidence from public sources and conversations, organize it, compare alternatives, and turn what you learn into a decision you can test. The point is not to produce a giant report. The point is to replace guesses with specific, traceable evidence before you spend weeks building.
+A
+
+*Use this path to move from a defined problem through evidence and options to a reasoned product decision.*n idea can sound exciting and still be wrong for the people you hope to serve. Research reduces the cost of being wrong. In this module, you will use Friday as a research analyst: gather evidence from public sources and conversations, organize it, compare alternatives, and turn what you learn into a decision you can test. The point is not to produce a giant report. The point is to replace guesses with specific, traceable evidence before you spend weeks building.
 
 Friday can help search, extract, compare, and structure information. Firecrawl may support web workflows when connected; access and controls vary. Treat agent findings as leads to verify. You remain responsible for interpreting the evidence.
 
-You will create a research brief, compare competitors or substitutes, and design a validation experiment.\n\n![Problem-solving: use evidence to choose what to build](Images/problem-solving.svg)
+You will create a research brief, compare competitors or substitutes, and design a validation experiment.
+
+![Problem-solving: use evidence to choose what to build](Images/problem-solving.svg)
+
+*Follow the path from a clear problem through evidence and options to a reasoned product decision.*
 
 ## Start with a research question
 

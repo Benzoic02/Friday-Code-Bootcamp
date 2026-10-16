@@ -14,7 +14,7 @@ Start by deciding what this first project must do. For the module exercise, it n
 
 Set aside a project folder that is easy to find, such as `Projects/validate-this-idea`, and keep project files together. Download Friday Code from [tryfriday.ai](https://www.tryfriday.ai/code), then install the desktop app using its current instructions. Open or create a local project in that folder. Exact labels and setup options may vary by version, so use current product guidance rather than guessing.
 
-[![Screenshot of the Friday Code download page. Open the image to view the original full-resolution screenshot.](Images/Screenshot%202026-10-13%20122304.png)](Images/Screenshot%202026-10-13%20122304.png)
+[![Screenshot of the Friday Code download page. Open the image to view the original full-resolution screenshot.](Images/Screenshot 2026-10-13 122304.png)](Images/Screenshot 2026-10-13 122304.png)
 
 Before giving an agent a large request, confirm that Friday can open the intended folder and that you understand where project files will live. This avoids a surprisingly common first-day error: asking for a build, then discovering that it was made in a different directory from the one you expected.
 
@@ -128,7 +128,11 @@ Review available usage or credit information before long or parallel work. Prici
 - **Overbuilding before feedback.** A small page can teach you more than an elaborate application built in isolation.
 - **Treating visits as validation.** Talk to relevant visitors and learn what they understood and need.
 
-### The learning loop\n\n**Observe a real need → define one user and outcome → test the smallest useful version → learn and refine.** Let each step be evidence-led: a conversation informs the problem, a small test checks the riskiest assumption, and results shape the next step.\n\n## Project exercise: Validate This Idea in 48 Hours
+### The learning loop
+
+**Observe a real need → define one user and outcome → test the smallest useful version → learn and refine.** Let each step be evidence-led: a conversation informs the problem, a small test checks the riskiest assumption, and results shape the next step.
+
+## Project exercise: Validate This Idea in 48 Hours
 
 Choose one real problem you can describe in two sentences. Create a one-page site that introduces a possible solution and collects email addresses in a simple Supabase waitlist. Use Friday to generate the initial copy and a small set of ad creative ideas. Keep all claims truthful. Do not buy ads or contact people without considering platform rules, consent, and your budget. The purpose of creative is to test a message, not to disguise an unproven product as established.
 

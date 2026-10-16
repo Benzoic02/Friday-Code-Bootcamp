@@ -10,7 +10,7 @@
 - **Responsiveness**: Responsive design using CSS breakpoints.
 - **Layout Consistency**: `.lesson-layout` and `.lesson-body` containers must share a 1040px max-width and center-alignment.
 - **Checklist Styling**: Checklist headings are strictly labeled "Checklist". Items are rendered as interactive, persistent checkboxes via `localStorage`. Leading emoji markers (e.g., ✅) are prohibited within Markdown source to prevent display duplication.
-- **Image Assets**: Relative paths to `Images/` folder are used for inline content.
+- **Image Assets**: Relative paths to `Images/` folder are used for inline content. Supported formats include `.png` and `.svg`.
 
 ### Project Constraints
 - **File Management**: Direct editing via standard editors often triggers Windows file-lock errors. Modifications must be performed via `node -e` one-liners or dedicated patch scripts (e.g., `_finish-checklist-and-image.js`).

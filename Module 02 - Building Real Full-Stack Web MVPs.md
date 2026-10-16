@@ -1,10 +1,24 @@
 # Module 02: Build a Web App
 
-## What changes when a site becomes a product\r\n\r\nA landing page presents information. A full-stack product also accepts input, remembers data, identifies users, and enforces permissions. “Full stack” means its interface and behind-the-scenes services work together.
+## What changes when a site becomes a product
+
+A landing page presents information. A full-stack product also accepts input, remembers data, identifies users, and enforces permissions. “Full stack” means its interface and behind-the-scenes services work together.
 
 The goal is a focused micro-SaaS or useful tool that a small group can actually use. Examples from the course outline include a niche directory with submissions and admin approval, a personal CRM or deal tracker, a freelancer client portal, and a Living Style Guide Generator that analyzes a brand website plus Figma and produces an interactive component library. These are examples to learn from, not promises that every integration or analysis happens automatically.
 
-Friday can help plan and build, connect a backend, iterate on the interface, work with GitHub, and support deployment. You decide the data model, review permissions, test journeys, and understand what you publish. Labels and options may vary by version.\r\n\r\n### Worked example: a small playable web game\r\n\r\nA browser game makes the difference concrete: the interface displays the board, the player supplies input, and the app updates the game state. This example shows how one clear interaction can become a complete, focused web experience. The project subtitle is **aetheria.tryfriday.app**.\r\n\r\n![Example of a playable web game built as a focused web app](Images/game-example.png)\r\n\r\n*Example project: aetheria.tryfriday.app — a focused, playable web experience.*\r\n\r\n## 1. Scope a complete but small MVP
+Friday can help plan and build, connect a backend, iterate on the interface, work with GitHub, and support deployment. You decide the data model, review permissions, test journeys, and understand what you publish. Labels and options may vary by version.
+
+### Worked example: a small playable web game
+
+A browser game makes the difference concrete: the interface displays the board, the player supplies input, and the app updates the game state. It is also a useful MVP test: can a player understand the goal, make a move, and see an immediate response? Keeping this first version focused on that loop makes the core experience testable before adding secondary features.
+
+**aetheria.tryfriday.app**
+
+![Example of a playable web game built as a focused web app](Images/game-example.png)
+
+*Example project: aetheria.tryfriday.app — a focused, playable web experience.*
+
+## 1. Scope a complete but small MVP
 
 An MVP is a minimum viable product: the smallest version that delivers one meaningful outcome to a defined user. It is not a broken prototype, and it is not every feature you hope to build later. Choose a central task that someone can finish and judge whether it helped.
 
