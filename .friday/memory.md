@@ -10,14 +10,16 @@
 - **Responsiveness**: Responsive design using CSS breakpoints.
 - **Layout Consistency**: `.lesson-layout` and `.lesson-body` containers must share a 1040px max-width and center-alignment.
 - **Checklist Styling**: Checklist headings are strictly labeled "Checklist". Items use persistent `localStorage` checkboxes. Leading emoji markers (e.g., ✅) are prohibited in Markdown source.
+- **Header Actions**: The `.topbar-actions` container hosts the theme toggle and the Slack invite icon (linked to `friday-code.slack.com`).
 - **Image Assets**:
     - **Pathing**: Use `<Images/file name.png>` (angle brackets) to support filenames with spaces.
     - **Styling**: Images and figures must be responsive. Use standard `<figure>` and `<figcaption>` elements.
     - **Rendering**: Avoid `image-rendering: pixelated`; use default browser interpolation.
 
 ### Project Constraints
-- **File Management**: Direct editing triggers Windows file-lock errors. Use `node -e` one-liners or targeted patch scripts.
+- **File Management**: Direct editing triggers Windows file-lock errors. Use `node -e` one-liners or targeted patch scripts (e.g., `_patch-slack.js`).
 - **Tooling**: `rg` (ripgrep) is unavailable. Use `Get-ChildItem` with `Select-String` or Node.js `fs` module for file inspection.
 - **Newline Handling**: Files utilize `CRLF` endings. Scripts must account for `\r\n` sequences.
 - **Data Integrity**: No literal escape sequences (e.g., `\n`, `\\n`) are permitted in Markdown source. 
 - **Header Cleanliness**: The Introduction page must not contain "THE COURSE ---" prefixes or dividers in the rendered header.
+- **Content Exclusions**: The Introduction module must not contain checklists.

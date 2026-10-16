@@ -38,6 +38,11 @@ Describe the phone journey rather than asking for “the web app, but mobile.”
 
 Keep the navigation shallow. A person in the field should not need to hunt through a complicated menu to save a note. Place the most common action where it is easy to reach, use large touch targets, and avoid forcing long text entry if a shorter choice or optional field will do.
 
+<figure class="lesson-figure">
+  <img src="Images/mobile-app.png" alt="Mobile app interface example illustrating a focused, touch-friendly phone experience" loading="lazy">
+  <figcaption>Example mobile app interface: translate a web workflow into a focused phone screen, with clear hierarchy and actions that are easy to reach by touch.</figcaption>
+</figure>
+
 Tell Friday what data is required, what is optional, which screens need to exist, and what should happen after each action. A useful prompt might be:
 
 > Create a mobile app for a small sales team to log client visits. Use React Native with Expo. Include a recent-visits list, a concise visit form, and a detail view. Ask for client, notes, and next action; make the follow-up date optional. Save drafts locally if the device is offline and show whether each record is waiting to sync or has synced. Use the existing Supabase backend for authenticated team records. Do not add location tracking or background monitoring. Propose navigation, data flow, and offline behavior before coding.
