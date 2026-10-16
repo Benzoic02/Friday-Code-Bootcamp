@@ -187,11 +187,11 @@ Your capstone is the start of a practice, not a finish line. Keep the product sm
 6. Reflect on what became faster, what still needed human judgment, and what you would improve next.
 
 ### Checklist
-- ✅ User and problem are clear
-- ✅ Scope is narrow enough to test
-- ✅ Core workflow is defined before extra features
-- ✅ Real validation happens before launch
-- ✅ A next improvement is recorded for the next cycle
+- User and problem are clear
+- Scope is narrow enough to test
+- Core workflow is defined before extra features
+- Real validation happens before launch
+- A next improvement is recorded for the next cycle
 
 > Pro tip: treat every module as a build-test-learn loop. The goal is not perfection, it is clarity, evidence, and a usable result that can be improved with the next test.
 

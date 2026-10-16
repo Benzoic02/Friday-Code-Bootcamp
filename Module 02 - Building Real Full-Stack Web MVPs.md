@@ -180,11 +180,11 @@ Your code does not need to be perfect or large. It should be understandable enou
 6. Deploy a working version and collect real feedback on the core workflow.
 
 ### Checklist
-- ✅ User and problem are clear
-- ✅ Scope is narrow enough to test
-- ✅ Core workflow is defined before extra features
-- ✅ Real validation happens before launch
-- ✅ A next improvement is recorded for the next cycle
+- User and problem are clear
+- Scope is narrow enough to test
+- Core workflow is defined before extra features
+- Real validation happens before launch
+- A next improvement is recorded for the next cycle
 
 > Pro tip: treat every module as a build-test-learn loop. The goal is not perfection, it is clarity, evidence, and a usable result that can be improved with the next test.
 

@@ -165,11 +165,11 @@ Your project is complete when you can show a written workflow contract, a tested
 6. Keep the automation narrow, measured, and easy to disable when quality drops.
 
 ### Checklist
-- ✅ User and problem are clear
-- ✅ Scope is narrow enough to test
-- ✅ Core workflow is defined before extra features
-- ✅ Real validation happens before launch
-- ✅ A next improvement is recorded for the next cycle
+- User and problem are clear
+- Scope is narrow enough to test
+- Core workflow is defined before extra features
+- Real validation happens before launch
+- A next improvement is recorded for the next cycle
 
 > Pro tip: treat every module as a build-test-learn loop. The goal is not perfection, it is clarity, evidence, and a usable result that can be improved with the next test.
 

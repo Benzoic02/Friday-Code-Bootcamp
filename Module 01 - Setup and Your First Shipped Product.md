@@ -45,6 +45,8 @@ The last sentence creates a review point. Read the plan. Correct wrong assumptio
 
 ## 4. Describe the smallest useful product
 
+![A visual guide to defining the smallest useful product](Images/smallest-useful-product-module1.png)
+
 Before asking for design or code, write a short brief:
 
 1. **Audience:** Who has the problem? Be more specific than “everyone.”
@@ -175,11 +177,11 @@ The most important result is a completed learning loop. A small product put in f
 6. Deploy, share with a few real people, and capture what they misunderstood or wanted.
 
 ### Checklist
-- ✅ User and problem are clear
-- ✅ Scope is narrow enough to test
-- ✅ Core workflow is defined before extra features
-- ✅ Real validation happens before launch
-- ✅ A next improvement is recorded for the next cycle
+- User and problem are clear
+- Scope is narrow enough to test
+- Core workflow is defined before extra features
+- Real validation happens before launch
+- A next improvement is recorded for the next cycle
 
 > Pro tip: treat every module as a build-test-learn loop. The goal is not perfection, it is clarity, evidence, and a usable result that can be improved with the next test.
 

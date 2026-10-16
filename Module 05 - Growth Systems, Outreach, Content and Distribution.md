@@ -166,11 +166,11 @@ Friday can make the process faster, but not make an irrelevant offer valuable or
 6. Publish one verified piece of content or update and use the response to improve the next message.
 
 ### Checklist
-- ✅ User and problem are clear
-- ✅ Scope is narrow enough to test
-- ✅ Core workflow is defined before extra features
-- ✅ Real validation happens before launch
-- ✅ A next improvement is recorded for the next cycle
+- User and problem are clear
+- Scope is narrow enough to test
+- Core workflow is defined before extra features
+- Real validation happens before launch
+- A next improvement is recorded for the next cycle
 
 > Pro tip: treat every module as a build-test-learn loop. The goal is not perfection, it is clarity, evidence, and a usable result that can be improved with the next test.
 
