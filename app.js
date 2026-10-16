@@ -375,7 +375,7 @@
         window.setTimeout(() => { button.textContent = "Copy"; }, 1800);
       });
     });
-    document.title = `${title} | Friday Code Bootcamp`;
+    document.title = "Friday Code Bootcamp: Go from idea to a product people can use";
     renderFooter();
     buildNavigation();
     prepareHeadings(content);
