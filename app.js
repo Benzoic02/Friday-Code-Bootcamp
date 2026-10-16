@@ -324,7 +324,6 @@
       ${introImage}
       ${description ? `<p class="lesson-deck">${escapeHtml(description)}</p>` : ""}
       ${introSnapshot}
-      ${lesson.id === "introduction" ? '<div class="hero-divider"><span>THE COURSE</span></div>' : ""}
     </header>`;
 
     const lessonBody = document.createElement("div");
