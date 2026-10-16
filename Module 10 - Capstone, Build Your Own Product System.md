@@ -167,3 +167,32 @@ As a practical minimum, invite at least three appropriate reviewers or potential
 ## Carry it forward
 
 Your capstone is the start of a practice, not a finish line. Keep the product small enough to maintain, keep code and data under your control, and review recurring costs and permissions. Use Friday to propose and implement changes, but preserve a human owner for product decisions and consequential actions. Keep learning from real users. The most valuable product system is not the one with the most agents; it is the one that helps a particular person do something worthwhile, reliably and with less unnecessary effort.
+
+## Quick-start checklist
+
+### What you are building
+
+- Create a small but complete product system with a live experience, an automation, and a clear operating model.
+- Design the system around one real user promise instead of a large feature wish list.
+- Keep automation narrow, reviewable, and stoppable when quality drops.
+- Document decisions, owners, and safety checks so the system can keep working without guesswork.
+
+### Your workflow in 6 easy steps
+
+1. Write the capstone brief and define the user, task, and measurable success.
+2. Map the core product, automation, and workflow handoffs before writing code.
+3. Build the smallest end-to-end version first and test it with real examples.
+4. Add one bounded automation with logs, failure handling, and a pause path.
+5. Deploy a safe version and collect pilot feedback from the intended user group.
+6. Reflect on what became faster, what still needed human judgment, and what you would improve next.
+
+### Visual checklist
+
+- ✅ User and problem are clear
+- ✅ Scope is narrow enough to test
+- ✅ Core workflow is defined before extra features
+- ✅ Real validation happens before launch
+- ✅ A next improvement is recorded for the next cycle
+
+> Pro tip: treat every module as a build-test-learn loop. The goal is not perfection, it is clarity, evidence, and a usable result that can be improved with the next test.
+

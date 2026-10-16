@@ -157,3 +157,32 @@ Before you act on a finding, ask:
 Common mistakes include treating search rank as market size, assuming a review represents every buyer, comparing prices with different billing units, confusing a missing page with a missing feature, and asking interviewees to predict whether they would use a hypothetical product. Another trap is over-automating before confirming that your sources and extraction format work. Automation can repeat errors faster and make them look systematic.
 
 Give Friday a clear question, source boundaries, desired structure, and rules for uncertainty. Verify claims, protect private information, respect site policies, and make the decision yourself. Research helps you choose a better next thing to ship.
+
+## Quick-start checklist
+
+### What you are building
+
+- Turn a risky assumption into evidence you can trust before building too much.
+- Define the risky assumption before collecting data or designing features.
+- Use comparable products and user signals to separate fact from noise.
+- Write a decision with a next test, not a vague feeling that the idea is promising.
+
+### Your workflow in 6 easy steps
+
+1. State the question, the assumption, and the most expensive way this could be wrong.
+2. Collect a few relevant examples and note what users actually do, not what a brand claims.
+3. Break the problem into facts, signs, and unknowns so the decision is grounded.
+4. Synthesize findings into a short recommendation and a small next experiment.
+5. Rank the most important product risks before investing more time or code.
+6. Choose the next action with evidence, then repeat the validation loop.
+
+### Visual checklist
+
+- ✅ User and problem are clear
+- ✅ Scope is narrow enough to test
+- ✅ Core workflow is defined before extra features
+- ✅ Real validation happens before launch
+- ✅ A next improvement is recorded for the next cycle
+
+> Pro tip: treat every module as a build-test-learn loop. The goal is not perfection, it is clarity, evidence, and a usable result that can be improved with the next test.
+

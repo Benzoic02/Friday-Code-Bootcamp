@@ -168,3 +168,32 @@ You have a versioned product brief, a visible task sequence with dependencies, a
 ## Keep orchestration human-led
 
 A multi-agent product factory can eventually connect research, design, code, marketing, and video. Grow toward that system by proving one handoff at a time. Keep work owned, visible, and reversible where possible. Let agents contribute speed and specialized attention; reserve product direction, sensitive judgment, and approval for people who are accountable for the result.
+
+## Quick-start checklist
+
+### What you are building
+
+- Divide a larger product into distinct roles so work stays explainable, reviewable, and easier to improve.
+- Give each role one job, not ten overlapping jobs.
+- Create clear handoffs and review steps so work does not drift or get lost.
+- Test the full workflow together before relying on it in real scenarios.
+
+### Your workflow in 6 easy steps
+
+1. Define the end goal and the boundaries of the task before assigning roles.
+2. Split the workflow into research, planning, building, review, and handoff tasks.
+3. Give each role a clear input and a clear output so ownership is visible.
+4. Connect the roles in a way that preserves decisions and avoids hidden drift.
+5. Test the whole workflow with realistic examples and capture the friction points.
+6. Improve the interfaces between roles, not just the individual steps.
+
+### Visual checklist
+
+- ✅ User and problem are clear
+- ✅ Scope is narrow enough to test
+- ✅ Core workflow is defined before extra features
+- ✅ Real validation happens before launch
+- ✅ A next improvement is recorded for the next cycle
+
+> Pro tip: treat every module as a build-test-learn loop. The goal is not perfection, it is clarity, evidence, and a usable result that can be improved with the next test.
+

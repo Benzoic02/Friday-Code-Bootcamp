@@ -145,3 +145,32 @@ Build a small weekly workflow for one real or invented product. It should gather
 ### Success criteria
 
 Your project is complete when you can show a written workflow contract, a tested sample output with verifiable evidence, and a clear approval boundary for risky actions. You can explain what happens when the workflow fails, estimate its recurring cost, and locate the control that pauses or disables it. A successful automation is not one that runs without you; it is one that reliably prepares useful work while leaving consequential decisions under your control.
+
+## Quick-start checklist
+
+### What you are building
+
+- Build a safe, useful automation around an actual recurring task and make the limits visible.
+- Start with a single controlled workflow with a clear trigger, action, and review point.
+- Limit access, size, and actions so failure stays low-risk and easy to monitor.
+- Document how to pause, inspect, and recover before the automation touches real users.
+
+### Your workflow in 6 easy steps
+
+1. Pick a recurring task where human review is possible and the result matters.
+2. Map the trigger, input, output, and boundary conditions before writing any logic.
+3. Define the safe scope, failure behavior, and stop mechanism in plain language.
+4. Run the workflow with safe example data and review the results before real use.
+5. Add logging, alerts, and a way to inspect what the automation did each time.
+6. Keep the automation narrow, measured, and easy to disable when quality drops.
+
+### Visual checklist
+
+- ✅ User and problem are clear
+- ✅ Scope is narrow enough to test
+- ✅ Core workflow is defined before extra features
+- ✅ Real validation happens before launch
+- ✅ A next improvement is recorded for the next cycle
+
+> Pro tip: treat every module as a build-test-learn loop. The goal is not perfection, it is clarity, evidence, and a usable result that can be improved with the next test.
+

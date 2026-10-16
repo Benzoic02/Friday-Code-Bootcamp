@@ -146,3 +146,32 @@ Research, writing, image generation, and connected services may use credits, quo
 Email deliverability depends on reputation, authentication, recipient relevance, list quality, and provider policies. It cannot be guaranteed by clever copy. Do not buy lists or attempt to bypass spam protections. Send only appropriate, expected messages, identify yourself honestly, and honor opt-outs. Test your domain configuration and sending setup using current provider guidance before relying on it for important communication.
 
 Friday can make the process faster, but not make an irrelevant offer valuable or an unverified claim true. Keep the system small, human, measurable, and respectful. A few conversations and useful content beat an untrusted growth machine.
+
+## Quick-start checklist
+
+### What you are building
+
+- Build a simple growth system for research, outreach, and content that helps the right people notice your product.
+- Begin with a precise audience, a useful offer, and a realistic next step.
+- Use respectful research and short, honest outreach before scaling anything.
+- Measure learning and qualified replies, not vanity metrics alone.
+
+### Your workflow in 6 easy steps
+
+1. Choose one audience and one promise that is specific enough to test.
+2. Identify a small list of justified contacts and record why they fit.
+3. Research public context and draft a short, easy-to-decline message.
+4. Review the message for factual clarity, trust, and tone before sending.
+5. Track replies, refusals, and useful learnings in a simple system.
+6. Publish one verified piece of content or update and use the response to improve the next message.
+
+### Visual checklist
+
+- ✅ User and problem are clear
+- ✅ Scope is narrow enough to test
+- ✅ Core workflow is defined before extra features
+- ✅ Real validation happens before launch
+- ✅ A next improvement is recorded for the next cycle
+
+> Pro tip: treat every module as a build-test-learn loop. The goal is not perfection, it is clarity, evidence, and a usable result that can be improved with the next test.
+

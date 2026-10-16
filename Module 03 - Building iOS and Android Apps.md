@@ -154,3 +154,32 @@ Convert a web idea into a mobile companion app for a small freelance or sales te
 - Feedback from intended users has led to at least one concrete improvement or a reasoned decision not to change the flow.
 
 The right first mobile app is not the one with the most screens. It is the one that makes a valuable task easier in the place and moment where a person needs it.
+
+## Quick-start checklist
+
+### What you are building
+
+- Design a phone-first experience that solves a real, repeatable mobile task.
+- Only build a mobile app if the phone creates a clear advantage over the web.
+- Keep the core flow short, touch-friendly, and easy to complete in one hand.
+- Preview on a real device and test offline and error states before release.
+
+### Your workflow in 6 easy steps
+
+1. Decide whether the mobile moment is frequent, location-sensitive, or device-first.
+2. Map the key screens and the shortest path to a successful action.
+3. Define the data that needs to persist versus the state that exists only in memory.
+4. Build the primary flow before adding notifications, advanced settings, or future features.
+5. Preview on a real device and check keyboard, touch targets, and connectivity.
+6. Connect the app carefully, test permissions, and document what remains for release.
+
+### Visual checklist
+
+- ✅ User and problem are clear
+- ✅ Scope is narrow enough to test
+- ✅ Core workflow is defined before extra features
+- ✅ Real validation happens before launch
+- ✅ A next improvement is recorded for the next cycle
+
+> Pro tip: treat every module as a build-test-learn loop. The goal is not perfection, it is clarity, evidence, and a usable result that can be improved with the next test.
+

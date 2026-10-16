@@ -68,6 +68,97 @@
     }
   };
 
+  const lessonChecklists = {
+    introduction: [
+      "Define the user problem in plain language.",
+      "Choose a tiny first version that can be tested quickly.",
+      "Ask Friday for a plan and risk review before building.",
+      "Build one end-to-end flow and test it as a user would.",
+      "Capture what worked, what failed, and the next change.",
+      "Ship a small honest result and repeat the learning loop."
+    ],
+    "module-01": [
+      "Define the audience, promise, and one primary action.",
+      "Set up a clean project folder and confirm the correct files.",
+      "Ask for a plan before building the page.",
+      "Build the page in reviewable stages.",
+      "Test mobile and desktop behavior, including failure states.",
+      "Deploy and gather real user feedback."
+    ],
+    "module-02": [
+      "Scope one clear user task and measurable outcome.",
+      "Write the roles, permissions, and out-of-scope features.",
+      "Ask for a rough screen and data model before coding.",
+      "Build browse, submit, and review milestones.",
+      "Confirm what visitors, contributors, and admins can do.",
+      "Deploy a working MVP and review user feedback."
+    ],
+    "module-03": [
+      "Decide why the mobile experience matters.",
+      "Map the key screens and shortest path to success.",
+      "Separate saved state from temporary screen state.",
+      "Build the core mobile flow before extra features.",
+      "Preview on a real device and test the mobile journey.",
+      "Document what remains for release and export."
+    ],
+    "module-04": [
+      "State the core assumption and what could go wrong.",
+      "Collect a few relevant examples and notes.",
+      "Separate facts, signals, and unknowns clearly.",
+      "Synthesize a recommendation and next test.",
+      "Use evidence to rank the biggest product risks.",
+      "Choose the next action before building more."
+    ],
+    "module-05": [
+      "Choose a specific audience and a realistic offer.",
+      "Build a small justified list of relevant contacts.",
+      "Research public context and draft a short outreach note.",
+      "Review the message for clarity and respect before sending.",
+      "Track replies, rejections, and useful learnings.",
+      "Publish one useful piece of content or update."
+    ],
+    "module-06": [
+      "Write the claim, audience, and action the video should drive.",
+      "Draft the script and scene list before generating media.",
+      "Create an early visual pass and keep it easy to revise.",
+      "Review pacing, accuracy, and clarity with a checklist.",
+      "Fix mismatches and trim filler before publishing.",
+      "Use the final asset to support a clear product message."
+    ],
+    "module-07": [
+      "Pick a recurring workflow with a clear review point.",
+      "Map the trigger, input, output, and limits.",
+      "Define the safety scope and stop mechanism.",
+      "Run the automation on safe example data.",
+      "Add logs and a way to inspect failures.",
+      "Keep the automation narrow, measured, and easy to disable."
+    ],
+    "module-08": [
+      "Define the end goal and task boundaries.",
+      "Split the work into clear roles and handoffs.",
+      "Give each role a single job and output.",
+      "Connect roles without hidden assumptions.",
+      "Test the whole workflow with realistic examples.",
+      "Improve the interfaces between agents and tasks."
+    ],
+    "module-09": [
+      "Fix the highest-risk breakage in the core workflow.",
+      "Review permissions, data, and payment safety.",
+      "Decide what needs measuring to know the product works.",
+      "Set up a launch plan with support and rollback.",
+      "Run a small pilot and collect real user feedback.",
+      "Use evidence to choose the next business improvement."
+    ],
+    "module-10": [
+      "Write the capstone brief and success metric.",
+      "Map the product, automation, and workflow handoffs.",
+      "Build the smallest end-to-end version first.",
+      "Add one bounded automation with logs and guardrails.",
+      "Deploy a safe version and collect pilot feedback.",
+      "Reflect on what improved and what still needs human judgment."
+    ]
+  };
+
   const root = document.documentElement;
   const shell = document.querySelector(".app-shell");
   const nav = document.getElementById("lesson-nav");
@@ -306,8 +397,20 @@
       ${description ? `<p class="lesson-deck">${escapeHtml(description)}</p>` : ""}
       ${introSnapshot}
       ${lesson.id === "introduction" ? '<div class="hero-divider"><span>THE COURSE</span></div>' : ""}
-    </header>
-    <div class="lesson-body">${temporary.innerHTML}</div>`;
+    </header>`;
+
+    const lessonBody = document.createElement("div");
+    lessonBody.className = "lesson-body";
+    lessonBody.innerHTML = temporary.innerHTML;
+
+    const layout = document.createElement("div");
+    layout.className = "lesson-layout";
+    layout.appendChild(lessonBody);
+
+    const checklist = renderLessonChecklist(lesson.id, lesson.label);
+    if (checklist) layout.appendChild(checklist);
+
+    content.appendChild(layout);
     content.querySelectorAll(".copy-prompt-button").forEach((button) => {
       button.addEventListener("click", async () => {
         const prompt = button.closest(".copy-prompt").querySelector("blockquote").textContent.trim();
@@ -374,6 +477,113 @@
       <code>${escapeHtml(lesson.file)}</code>
     </div>`;
     footer.innerHTML = "";
+  }
+
+  function getChecklistState(lessonId) {
+    try {
+      const stored = localStorage.getItem(`friday-course-checklist-${lessonId}`);
+      if (!stored) return {};
+      const parsed = JSON.parse(stored);
+      return parsed && typeof parsed === "object" ? parsed : {};
+    } catch (error) {
+      console.warn(`Checklist state could not be read for ${lessonId}.`, error);
+      return {};
+    }
+  }
+
+  function setChecklistState(lessonId, state) {
+    try {
+      localStorage.setItem(`friday-course-checklist-${lessonId}`, JSON.stringify(state));
+    } catch (error) {
+      console.warn(`Checklist state could not be saved for ${lessonId}.`, error);
+    }
+  }
+
+  function getChecklistVisibility(lessonId) {
+    try {
+      const stored = localStorage.getItem(`friday-course-checklist-visible-${lessonId}`);
+      return stored === null ? true : stored === "true";
+    } catch (error) {
+      console.warn(`Checklist visibility could not be read for ${lessonId}.`, error);
+      return true;
+    }
+  }
+
+  function setChecklistVisibility(lessonId, visible) {
+    try {
+      localStorage.setItem(`friday-course-checklist-visible-${lessonId}`, String(visible));
+    } catch (error) {
+      console.warn(`Checklist visibility could not be saved for ${lessonId}.`, error);
+    }
+  }
+
+  function renderLessonChecklist(lessonId, lessonTitle) {
+    const tasks = lessonChecklists[lessonId] || [];
+    if (!tasks.length) return null;
+
+    const savedState = getChecklistState(lessonId);
+    const total = tasks.length;
+    const complete = tasks.reduce((count, _, index) => count + (savedState[index] ? 1 : 0), 0);
+    const percent = Math.round((complete / total) * 100);
+    const isVisible = getChecklistVisibility(lessonId);
+
+    const checklist = document.createElement("aside");
+    checklist.className = `lesson-checklist ${isVisible ? "" : "checklist-collapsed"}`;
+    checklist.setAttribute("aria-label", `${lessonTitle} checklist`);
+    checklist.innerHTML = `
+      <div class="checklist-header">
+        <span class="checklist-label">CHECKLIST</span>
+        <button class="checklist-toggle" type="button" aria-expanded="${String(isVisible)}" aria-label="${isVisible ? "Hide checklist" : "Show checklist"}">
+          ${isVisible ? "Hide" : "Show"}
+        </button>
+      </div>
+      <div class="checklist-body">
+        <div class="checklist-progress-wrap">
+          <div class="checklist-progress" aria-hidden="true"><span style="width:${percent}%"></span></div>
+          <span class="checklist-progress-text">${complete}/${total} complete</span>
+        </div>
+        <ul class="checklist-list">
+          ${tasks.map((task, index) => `
+            <li class="checklist-item">
+              <label>
+                <input type="checkbox" data-checklist-index="${index}" ${savedState[index] ? "checked" : ""}>
+                <span>${escapeHtml(task)}</span>
+              </label>
+            </li>`).join("")}
+        </ul>
+      </div>
+      <div class="checklist-finish">
+        <span class="checklist-finish-label">MODULE STATUS</span>
+        <strong>${percent === 100 ? "Completed" : percent >= 75 ? "Almost there" : "In progress"}</strong>
+      </div>`;
+
+    checklist.querySelector(".checklist-toggle").addEventListener("click", () => {
+      const collapsed = checklist.classList.toggle("checklist-collapsed");
+      const button = checklist.querySelector(".checklist-toggle");
+      button.setAttribute("aria-expanded", String(!collapsed));
+      button.setAttribute("aria-label", collapsed ? "Show checklist" : "Hide checklist");
+      button.textContent = collapsed ? "Show" : "Hide";
+      setChecklistVisibility(lessonId, !collapsed);
+    });
+
+    checklist.querySelectorAll("input[type='checkbox']").forEach((checkbox) => {
+      checkbox.addEventListener("change", () => {
+        const nextState = getChecklistState(lessonId);
+        nextState[checkbox.dataset.checklistIndex] = checkbox.checked;
+        setChecklistState(lessonId, nextState);
+
+        const updatedCount = tasks.reduce((count, _, index) => count + (nextState[index] ? 1 : 0), 0);
+        const newPercent = Math.round((updatedCount / total) * 100);
+        const progress = checklist.querySelector(".checklist-progress span");
+        const progressText = checklist.querySelector(".checklist-progress-text");
+        const finish = checklist.querySelector(".checklist-finish strong");
+        progress.style.width = `${newPercent}%`;
+        progressText.textContent = `${updatedCount}/${total} complete`;
+        finish.textContent = newPercent === 100 ? "Completed" : newPercent >= 75 ? "Almost there" : "In progress";
+      });
+    });
+
+    return checklist;
   }
 
   async function navigateTo(index, options = {}) {

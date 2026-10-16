@@ -155,3 +155,32 @@ Choose one real problem you can describe in two sentences. Create a one-page sit
 - You have feedback from relevant people and a written decision based on evidence, even if that decision is to change the idea.
 
 The most important result is a completed learning loop. A small product put in front of real people is now something you can improve with evidence rather than guesswork.
+
+## Quick-start checklist
+
+### What you are building
+
+- Create a small, real landing page or waitlist that explains a value proposition and captures a signal of interest.
+- Scope down to one audience, one offer, and one primary action.
+- Treat secrets, keys, and deployment settings as protected assets.
+- Ship a simple, public product and learn from real user feedback.
+
+### Your workflow in 6 easy steps
+
+1. Define the audience, problem, promise, and main call to action in one paragraph.
+2. Set up a clean project folder and confirm Friday can open the correct files.
+3. Use a clear prompt that asks for a plan before building the page.
+4. Build the headline, offer, proof, and signup flow in small reviewable stages.
+5. Test the page on mobile and desktop, including success and failure states.
+6. Deploy, share with a few real people, and capture what they misunderstood or wanted.
+
+### Visual checklist
+
+- ✅ User and problem are clear
+- ✅ Scope is narrow enough to test
+- ✅ Core workflow is defined before extra features
+- ✅ Real validation happens before launch
+- ✅ A next improvement is recorded for the next cycle
+
+> Pro tip: treat every module as a build-test-learn loop. The goal is not perfection, it is clarity, evidence, and a usable result that can be improved with the next test.
+

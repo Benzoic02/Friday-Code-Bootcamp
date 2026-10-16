@@ -160,3 +160,32 @@ Build a directory for one narrowly defined community, such as independent bicycl
 - You have documented at least one piece of user feedback, one remaining risk, and the next feature you will not build yet.
 
 Your code does not need to be perfect or large. It should be understandable enough to inspect, safe enough for a small controlled test, and focused enough that feedback can change the next decision.
+
+## Quick-start checklist
+
+### What you are building
+
+- Turn a single useful workflow into a small full-stack product with clear roles and real data.
+- Choose one central job instead of adding features before the workflow is proven.
+- Separate public browsing, user actions, and admin review with explicit permissions.
+- Test actual data flow, not just a pretty interface or a successful build.
+
+### Your workflow in 6 easy steps
+
+1. Scope a small MVP around one complete user task and one measurable outcome.
+2. Write the audience, roles, permissions, and out-of-scope features before coding.
+3. Ask for a rough screen and data model so structure is visible before implementation.
+4. Build browse, submit, and review flows in small milestones.
+5. Test what visitors, contributors, and admins can each view and do.
+6. Deploy a working version and collect real feedback on the core workflow.
+
+### Visual checklist
+
+- ✅ User and problem are clear
+- ✅ Scope is narrow enough to test
+- ✅ Core workflow is defined before extra features
+- ✅ Real validation happens before launch
+- ✅ A next improvement is recorded for the next cycle
+
+> Pro tip: treat every module as a build-test-learn loop. The goal is not perfection, it is clarity, evidence, and a usable result that can be improved with the next test.
+

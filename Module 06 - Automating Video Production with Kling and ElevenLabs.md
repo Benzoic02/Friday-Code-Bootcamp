@@ -169,3 +169,32 @@ Common mistakes include writing for the page instead of for speech, generating l
 Before considering a video finished, ask: Would a viewer understand the one main point? Can I prove every promise? Does the footage match the product's actual state? Do I have permission for every person's image or voice? Are the captions accurate? Is private information removed? Is the use of synthetic media appropriate and transparent? Did I check current provider costs, limits, rights, and platform delivery requirements?
 
 Keep human review for scripts, likeness or voice use, paid generation, and publication. Friday can coordinate work, but the founder owns truth, permissions, and final quality. A careful pipeline is easier to improve than unchecked automatic output.
+
+## Quick-start checklist
+
+### What you are building
+
+- Turn a fact or product promise into a short, accurate video asset without wasting time on endless revisions.
+- Start from a true claim, not a vague idea about what the video should “feel” like.
+- Plan scenes, script, visuals, and voiceover before generating expensive media.
+- Review and edit with a checklist so the video stays honest and useful.
+
+### Your workflow in 6 easy steps
+
+1. Write the core claim, target audience, and the single action the video should drive.
+2. Draft a short script and list the scenes, messages, and visual beats in order.
+3. Generate a first pass using the right visual and voice style, but keep it easy to adjust.
+4. Review the video for clarity, accuracy, pacing, and strong visual flow.
+5. Trim filler, fix mismatches, and confirm that the final message matches the product.
+6. Publish or reuse the asset with a clear understanding of what it does and does not prove.
+
+### Visual checklist
+
+- ✅ User and problem are clear
+- ✅ Scope is narrow enough to test
+- ✅ Core workflow is defined before extra features
+- ✅ Real validation happens before launch
+- ✅ A next improvement is recorded for the next cycle
+
+> Pro tip: treat every module as a build-test-learn loop. The goal is not perfection, it is clarity, evidence, and a usable result that can be improved with the next test.
+
