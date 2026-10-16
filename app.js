@@ -530,6 +530,7 @@
     const checklist = document.createElement("aside");
     checklist.className = `lesson-checklist ${isVisible ? "" : "checklist-collapsed"}`;
     checklist.setAttribute("aria-label", `${lessonTitle} checklist`);
+    const statusText = percent === 100 ? "🎉 Completed" : percent >= 75 ? "👀 Almost there" : "In progress";
     checklist.innerHTML = `
       <div class="checklist-header">
         <span class="checklist-label">CHECKLIST</span>
@@ -553,8 +554,7 @@
         </ul>
       </div>
       <div class="checklist-finish">
-        <span class="checklist-finish-label">MODULE STATUS</span>
-        <strong>${percent === 100 ? "Completed" : percent >= 75 ? "Almost there" : "In progress"}</strong>
+        <strong>${statusText}</strong>
       </div>`;
 
     checklist.querySelector(".checklist-toggle").addEventListener("click", () => {
@@ -579,7 +579,7 @@
         const finish = checklist.querySelector(".checklist-finish strong");
         progress.style.width = `${newPercent}%`;
         progressText.textContent = `${updatedCount}/${total} complete`;
-        finish.textContent = newPercent === 100 ? "Completed" : newPercent >= 75 ? "Almost there" : "In progress";
+        finish.textContent = newPercent === 100 ? "🎉 Completed" : newPercent >= 75 ? "👀 Almost there" : "In progress";
       });
     });
 
