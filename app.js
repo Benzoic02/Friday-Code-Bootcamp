@@ -518,6 +518,7 @@
   }
 
   function renderLessonChecklist(lessonId, lessonTitle) {
+    if (lessonId === "introduction") return null;
     const tasks = lessonChecklists[lessonId] || [];
     if (!tasks.length) return null;
 

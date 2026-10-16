@@ -258,6 +258,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
   justify-content: flex-end;
   width: min(100%, 1040px);
   margin: 0 0 0 auto;
+  padding-right: 344px;
 }
 
 .lesson-body {
@@ -270,7 +271,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
   position: fixed;
   top: 110px;
   right: clamp(22px, 3.8vw, 72px);
-  width: 320px;
+  width: 300px;
   max-height: calc(100vh - 220px);
   padding: 10px 10px 8px;
   border: 1px solid color-mix(in srgb, var(--line) 86%, transparent);
@@ -425,6 +426,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
 @media (max-width: 880px) {
   .lesson-layout {
     display: block;
+    padding-right: 0;
   }
 
   .lesson-checklist {
