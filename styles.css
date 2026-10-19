@@ -45,7 +45,13 @@
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
-img { max-width: 100%; height: auto; image-rendering: auto; }
+img, picture {
+  max-width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  -webkit-image-rendering: pixelated;
+}
 
 html { min-width: 320px; scroll-behavior: smooth; }
 
